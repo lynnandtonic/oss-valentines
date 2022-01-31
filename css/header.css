@@ -1,0 +1,84 @@
+header {
+	padding: .5em 1rem;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: .6em;
+	align-items: center;
+	background-color: white;
+}
+
+header .masthead {
+	text-decoration: none;
+	margin-right: auto;
+}
+
+header button,
+header .button {
+	font-size: 80%;
+}
+
+.instructions {
+	background-color: var(--color-gray-L200);
+	font-family: var(--font-headline);
+	font-weight: 680;
+	font-size: 1.4em;
+}
+
+.instructions span {
+	font-size: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+	header {
+		padding-bottom: 0;
+	}
+
+	.instructions {
+		margin: 0 -1rem;
+		padding: .5rem 1rem;
+		display: flex;
+		align-items: center;
+		gap: .5em;
+		flex-basis: calc(100% + 2em);
+		order: 3;
+	}
+}
+
+@media screen and (min-width: 801px) {
+	.instructions {
+		height: 100%;
+		min-width: 250px;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
+		text-align: center;
+	}
+
+	.instructions  {
+		padding-top: .5em;
+	}
+
+	.instructions span {
+		display: block;
+		text-align: center;
+		line-height: 1;
+	}
+
+	.instructions::before {
+		content: '';
+		width: 100%;
+		height: 25px;
+		position: absolute;
+		left: 0;
+		bottom: -25px;
+		background-repeat: no-repeat;
+		background-image: linear-gradient( 8deg, transparent 39.5%, var(--color-gray-L200) 41%),
+											linear-gradient(-8deg, transparent 39.5%, var(--color-gray-L200) 41%);
+		background-size: 51% 100%;
+		background-position: 0 0, 100% 0;
+		z-index: -1;
+	}
+}

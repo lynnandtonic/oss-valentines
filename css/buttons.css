@@ -1,0 +1,31 @@
+button,
+.button {
+  padding: .5em 1em .6em;
+  display: inline-block;
+  background-color: var(--color-teal-T500);
+  border-radius: 4px;
+  font-family: var(--font-secondary);
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-teal-T900);
+  text-decoration: none;
+  border: none;
+  transition: background-color 200ms;
+}
+
+button:hover,
+.button:hover {
+  background-color: var(--color-teal-T200);
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  filter: grayscale(100%);
+}
+
+.js-focus-visible button.focus-visible,
+.js-focus-visible .button.focus-visible {
+  box-shadow: 0 0 1px 4px var(--color-teal-T600);
+}

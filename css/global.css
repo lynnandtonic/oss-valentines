@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+::selection {
+	background: var(--color-teal-T300);
+	color: black;
+}
+
+body {
+	min-height: 100vh;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-red-R600);
+	color: var(--color-gray-L800);
+	line-height: 1.5;
+	font-family: var(--font-secondary);
+}
+
+a {
+	color: currentColor;
+}
+
+abbr[title] {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.center {
+	text-align: center;
+}
+
+/* Focus visible polyfill
+ * https://github.com/WICG/focus-visible
+ */
+.js-focus-visible :focus:not(.focus-visible) {
+	outline: none;
+}
+.js-focus-visible .focus-visible {
+	outline-color: var(--color-focus-ring);
+}
+@supports (box-shadow: none) {
+	.js-focus-visible .focus-visible {
+		outline: none;
+		box-shadow: 0 0 1px 4px var(--color-focus-ring);
+	}
+}
+
+.container {
+	display: grid;
+	grid-template-columns: [full-start] minmax(1em,1fr) [main-start] minmax(0,1200px) [main-end] minmax(1em,1fr) [full-end];
+}
+
+.container > .content {
+	grid-column: main;
+}
+
+@media screen and (max-width: 800px) {
+	.container > .content {
+		padding: 2em 0;
+	}
+}
+
+@media screen and (min-width: 801px) {
+	.container > .content {
+		padding: 4em 0;
+	}
+}

@@ -1,0 +1,42 @@
+.view-choose .nav-choose {
+	display: flex;
+}
+
+.view-choose .content {
+	min-height: 400px;
+	columns: 3 300px;
+	column-gap: 1.5em;
+}
+
+.view-choose .content > * {
+	-webkit-column-break-inside: avoid;
+	break-inside: avoid;
+}
+
+.view-choose .intro {
+	margin-bottom: 3em;
+}
+
+.view-choose .valentine {
+	margin-bottom: 1.5em;
+	display: block;
+}
+
+.js-focus-visible .valentine:focus:not(.focus-visible) {
+	outline: none;
+}
+
+.js-focus-visible .valentine.focus-visible {
+	outline-color: var(--color-focus-ring);
+}
+
+@supports (box-shadow: none) {
+	.js-focus-visible .valentine.focus-visible {
+		outline: none;
+		box-shadow: 0 0 1px 4px var(--color-focus-ring);
+	}
+}
+
+/*.view-choose .valentine:nth-of-type(4) {
+	padding-top: 3em;
+}*/

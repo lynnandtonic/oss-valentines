@@ -1,0 +1,77 @@
+.view-card .cta {
+	width: 90%;
+	max-width: 850px;
+	margin: 0 auto;
+	padding: 1em;
+	background-color: white;
+	display: flex;
+	gap: 1em;
+	align-items: center;
+}
+
+.view-card .cta p {
+	margin-top: 0;
+	margin-right: auto;
+}
+
+.view-card .cta .button,
+.view-card .cta button {
+	flex-shrink: 0;
+}
+
+.view-card .valentine {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.view-card input,
+.view-card button {
+	font-family: var(--font-secondary);
+}
+
+.view-card input {
+	width: 100%;
+	padding: .3em .5em;
+	display: block;
+	border: 1px solid var(--color-gray-L800);
+	border-radius: 4px;
+	font-size: 1em;
+	outline: none;
+	transition: box-shadow ease-in-out .15s;
+}
+
+.view-card input[required]::after {
+	content: 'required';
+}
+
+.view-card input:focus {
+	box-shadow: 0 0 1px 4px var(--color-focus-ring);
+}
+
+/* Share view,
+/* Recipient view
+/*-------------*/
+.view-card.view-share .cta,
+.view-card.view-recipient .cta {
+	margin-top: -1em;
+	background-color: transparent;
+	flex-wrap: wrap;
+}
+
+.view-card .cta .center {
+	flex-basis: 100%;
+}
+
+.view-share .share-link {
+  padding: .5em;
+	display: block;
+	background-color: rgba(255,255,255,.5);
+	border-radius: 3px;
+	flex-grow: 1;
+	text-align: center;
+	line-height: 1;
+	font-size: 1.4em;
+	text-decoration: none;
+	word-break: break-word;
+}

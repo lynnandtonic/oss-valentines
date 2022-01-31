@@ -1,0 +1,39 @@
+h1, h2, h3, h4 {
+	font-family: var(--font-headline);
+	font-weight: 680;
+}
+
+h1 {
+	font-size: 2.6em;
+	/*letter-spacing: -.02em;*/
+	line-height: 1.3;
+}
+
+h2 {
+	font-size:  2.5em;
+}
+
+h3 {
+	margin-top: 1.2em;
+	font-size:  1.8em;
+}
+
+@media screen and (max-width: 400px) {
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 2em;
+	}
+}
+
+main p,
+main ol,
+main ul {
+	margin-top: 1.2em;
+	font-size: 1.2em;
+}
+
+/*.content a:hover {
+	color: var(--color-teal-T600);
+}*/
