@@ -1,0 +1,22 @@
+{
+  "name": "oss-valentines",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netlify/oss-valentines.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/netlify/oss-valentines/issues"
+  },
+  "homepage": "https://github.com/netlify/oss-valentines#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
