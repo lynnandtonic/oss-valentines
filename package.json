@@ -19,6 +19,8 @@
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-plugin-directory-output": "^1.0.1",
-    "sass": "^1.49.7"
+    "@supabase/supabase-js": "^1.30.0",
+    "sass": "^1.49.7",
+    "shortid": "^2.2.16"
   }
 }

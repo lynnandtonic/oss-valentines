@@ -1,0 +1,16 @@
+[build] 
+  publish = "dist"
+  command = "npm run build"
+  functions = "./src/functions"
+
+
+[[redirects]]
+  from = "/create"
+  to = "/.netlify/functions/save-card"
+  status = 200
+
+# [[plugins]]
+#   package = "path or module name"
+
+#   [plugins.inputs]
+#     someOption = "some value"

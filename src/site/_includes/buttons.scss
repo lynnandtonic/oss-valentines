@@ -1,5 +1,6 @@
 button,
-.button {
+.button,
+.view-card input[type=submit] {
   padding: .5em 1em .6em;
   display: inline-block;
   background-color: var(--color-teal-T500);
@@ -15,7 +16,8 @@ button,
 }
 
 button:hover,
-.button:hover {
+.button:hover,
+.view-card input[type=submit]:hover {
   background-color: var(--color-teal-T200);
   cursor: pointer;
 }
