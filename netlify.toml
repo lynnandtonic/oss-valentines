@@ -9,6 +9,11 @@
   to = "/.netlify/functions/save-card"
   status = 200
 
+[[redirects]]
+  from = "/card/*"
+  to = "/.netlify/functions/view-card"
+  status = 200
+
 # [[plugins]]
 #   package = "path or module name"
 
