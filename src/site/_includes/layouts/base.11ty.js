@@ -1,9 +1,9 @@
-exports.data = { 
-  title: "My Rad Blog" 
-}; 
+exports.data = {
+  title: "My Rad Blog"
+};
 
 exports.render = function(data) {
-   return `
+  return `
 <!doctype html>
 <html lang="en">
 
@@ -33,7 +33,7 @@ exports.render = function(data) {
   <header>
     <a href="#" class="masthead">We ❤️ OSS</a>
     <button id="gh-login">Log in with GitHub</button>
-    <h2 class="instructions">Choose a card <span>💌</span></h2>
+    <h2 class="instructions">Choose a card<span>💌</span></h2>
   </header>
 
   
@@ -62,7 +62,8 @@ exports.render = function(data) {
   </footer>
 
   <script src="/js/focus-visible.min.js"></script>
+  <script src="/js/review-cta.js"></script>
 </body>
 
-</html>`; 
+</html>`;
 };

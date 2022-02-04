@@ -1,0 +1,16 @@
+[build] 
+  publish = "dist"
+  command = "npm run build"
+  functions = "./src/functions"
+
+
+[[redirects]]
+  from = "/create"
+  to = "/.netlify/functions/save-card"
+  status = 200
+
+[[redirects]]
+  from = "/card/*"
+  to = "/.netlify/builders/view-card"
+  status = 200
+
