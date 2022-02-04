@@ -62,6 +62,7 @@ exports.render = function(data) {
   </footer>
 
   <script src="/js/focus-visible.min.js"></script>
+  <script src="/js/review-cta.js"></script>
 </body>
 
 </html>`;

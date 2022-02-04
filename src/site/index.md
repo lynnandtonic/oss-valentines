@@ -12,8 +12,8 @@ pageClass: view-choose
       <p>We are grateful for what you are building.</p>
       <p>Love,<br /> Netlify + GitHub</p>
     </section>
-    <a class="valentine" href="/customize-logged-out"><img src="/img/valentine1.svg" alt="" /></a>
     <a class="valentine" href="/customize"><img src="/img/valentine2.svg" alt="" /></a>
+    <a class="valentine" href="/customize-logged-out"><img src="/img/valentine1.svg" alt="" /></a>
     <a class="valentine" href=""><img src="/img/valentine2.svg" alt="" /></a>
     <a class="valentine" href=""><img src="/img/valentine2.svg" alt="" /></a>
     <a class="valentine" href=""><img src="/img/valentine2.svg" alt="" /></a>

@@ -44,7 +44,7 @@ const handler = async(event) => {
 
     let pageData = {
       content: card(data[0]),
-      pageClass: "view-card view-recipient"
+      pageClass: "view-card view-share"
     }
 
 

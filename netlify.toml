@@ -11,11 +11,6 @@
 
 [[redirects]]
   from = "/card/*"
-  to = "/.netlify/functions/view-card"
+  to = "/.netlify/builders/view-card"
   status = 200
 
-# [[plugins]]
-#   package = "path or module name"
-
-#   [plugins.inputs]
-#     someOption = "some value"
