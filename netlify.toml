@@ -4,6 +4,12 @@
   functions = "./src/functions"
 
 
+[dev] 
+  publish = "dist"
+  command = "npm run dev"
+  functions = "./src/functions"
+
+
 [[redirects]]
   from = "/create"
   to = "/.netlify/functions/save-card"

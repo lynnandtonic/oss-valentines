@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build": "eleventy",
-    "dev": "ntl dev"
+    "dev": "eleventy --serve"
   },
   "repository": {
     "type": "git",
