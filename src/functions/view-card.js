@@ -47,7 +47,6 @@ const handler = async(event) => {
       pageClass: "view-card view-share"
     }
 
-
     return {
       statusCode: 200,
       headers: {
