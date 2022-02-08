@@ -1,6 +1,6 @@
 const { createClient } = require('@supabase/supabase-js');
 const { builder } = require('@netlify/functions');
-const { render } = require('../site/_includes/layouts/base.11ty.js');
+const { render } = require('../../src/site/_includes/layouts/base.11ty.js');
 const card = require('./partials/card.js');
 
 // Environment variables managed as part of teh Netlify site.
