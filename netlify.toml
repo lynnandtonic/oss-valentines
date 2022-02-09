@@ -18,3 +18,18 @@
   to = "/.netlify/builders/view-card"
   status = 200
 
+
+[[redirects]]
+   from = "/auth/*"
+   to = "/.netlify/functions/auth-:splat"
+   status = 200
+
+[[redirects]]
+   from = "/api/user/:username"
+   to = "/.netlify/functions/user"
+   status = 200
+
+[[redirects]]
+   from = "/api/*"
+   to = "/.netlify/functions/:splat"
+   status = 200

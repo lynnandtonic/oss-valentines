@@ -33,9 +33,10 @@ exports.render = function(data) {
 
 <body class="${data.pageClass}">
   <header>
-    <a href="/" class="masthead"><img src="/img/netlify-logo-full.svg" alt="Netlify" /> 💗 OSS</a>
-    <a class="button" id="gh-login" href="/.netlify/functions/auth-login">Log in with GitHub</a>
-    <h2 class="instructions">${data.bannerTitle}<span>💌</span></h2>
+  
+      <a href="/" class="masthead"><img src="/img/netlify-logo-full.svg" alt="Netlify" /> 💗 OSS</a>
+      <button class="button" id="gh-login" href="/.netlify/functions/auth-login">Log in with GitHub</a>
+      <h2 class="instructions">${data.bannerTitle}<span>💌</span></h2>
   </header>
 
   

@@ -13,6 +13,10 @@ permalink: "/customize/{{card.image}}/index.html"
   <main class="container">
     <div class="content">
       <section class="cta">
+        <p>Choose a recipient and add your signature by connecting to GitHub</p>
+        <a href="/customize-logged-in" class="button gh-login">Log in with GitHub</a>
+      </section>
+      {% comment %} <section class="cta">
         <p>If everything looks correct, let’s get this valentine on its way.</p>
         <form action="/create" method="post" name="new-valentine">
           <input type="hidden" id="senderName" name="senderName" value="lynnandtonic" />
@@ -22,7 +26,7 @@ permalink: "/customize/{{card.image}}/index.html"
           <input type="hidden" hidden id="cardVariant" name="cardVariant"  value="{{card.image}}.svg" />
           <input type="submit" class="button" value="Ship it!" />
         </form>
-      </section>
+      </section> {% endcomment %}
       <img src="/img/valentines/{{card.image}}.svg"  alt="{{card.title}}" class="valentine" />
     </div>
   </main>
