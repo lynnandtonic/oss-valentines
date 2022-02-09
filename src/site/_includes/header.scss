@@ -10,8 +10,18 @@ header {
 }
 
 header .masthead {
-	text-decoration: none;
 	margin-right: auto;
+	display: flex;
+	align-items: center;
+	font-family: var(--font-headline);
+	font-weight: 500;
+	text-decoration: none;
+}
+
+header .masthead img {
+	height: 20px;
+	display: inline-flex;
+	margin-right: .4em;
 }
 
 header button,
@@ -19,8 +29,12 @@ header .button {
 	font-size: 80%;
 }
 
+:root {
+	--instructions-bg: var(--color-gray-L200);
+}
+
 .instructions {
-	background-color: var(--color-gray-L200);
+	background-color: var(--instructions-bg);
 	font-family: var(--font-headline);
 	font-weight: 680;
 	font-size: 1.4em;
@@ -75,8 +89,8 @@ header .button {
 		left: 0;
 		bottom: -25px;
 		background-repeat: no-repeat;
-		background-image: linear-gradient( 8deg, transparent 39.5%, var(--color-gray-L200) 41%),
-											linear-gradient(-8deg, transparent 39.5%, var(--color-gray-L200) 41%);
+		background-image: linear-gradient( 8deg, transparent 39.5%, var(--instructions-bg) 41%),
+											linear-gradient(-8deg, transparent 39.5%, var(--instructions-bg) 41%);
 		background-size: 51% 100%;
 		background-position: 0 0, 100% 0;
 		z-index: -1;

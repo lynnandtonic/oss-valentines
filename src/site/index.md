@@ -7,24 +7,67 @@ pageClass: view-choose
 <main class="container">
   <div class="content">
     <section class="intro">
-      <h1>Open source, open hearts</h1>
-      <p>Join us in creating and sending a token of appreciation to your favorite open source software maintainers and projects.</p>
-      <p>We are grateful for what you are building.</p>
-      <p>Love,<br /> Netlify + GitHub</p>
+      <h1>Open source, <br/>open hearts</h1>
+      <p>We love the open source community.</p>
+      <p>Join us in sending a valentine—a token of appreciation—to your favorite open source developers and projects.</p>
+      <p class="byline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="69" viewBox="0 0 150 69">
+          <title>XOXO, Netlify</title>
+          <path d="M14.72,25.6c2.26,3.52,4.11,6.51,4.75,7.33,1.74,2.3,3.14,3.72,4.07,3.81.24,0,.35.3.4.72.08,1.42-.35,2-1.27,2.08a6,6,0,0,1-4.52-1.71,73.71,73.71,0,0,1-5.87-7.31A92.55,92.55,0,0,0,7.43,40.93a.54.54,0,0,1-.43.24c-1.19.14-4.15-.83-4.31-2.16a.63.63,0,0,1,0-.27c.71-3.87,3.56-9.88,5.45-13.88-3.41-4.78-5.92-8.77-6-9.26C2,14,3.35,10.17,4.34,10.06c.5-.06,3.19,4.14,6.55,9.47,3.32-6,6.86-11,7.82-11.11,1.37-.16,3,1.66,3.24,3.37a3,3,0,0,1-.42,2C20.55,15.35,16.59,22.07,14.72,25.6Z" fill="#db4648"/><path d="M34.6,38.54c-5.14.6-10.08-6-11.21-15.72-1.08-10,4.43-15.69,6.11-15.88a3.89,3.89,0,0,1,2,.58c.76-.44,1.77-1.72,3.29-1.89,2.48-.29,6.85,2.79,8.11,13.65.06.49.09,1.07.15,1.6C44,31.66,39.78,37.94,34.6,38.54Zm-2.09-27c-1.72.2-4.26,4.86-3.42,12.13.74,6.32,3.62,9.81,5.37,9.61s4.12-3.73,3.26-11.46C36.88,14.65,34.34,11.35,32.51,11.57Z" fill="#db4648"/><path d="M58,20.57c2.27,3.51,4.12,6.5,4.76,7.32,1.73,2.31,3.13,3.73,4.07,3.81.23,0,.34.31.39.73.09,1.41-.35,2-1.26,2.07a6,6,0,0,1-4.53-1.71,73.71,73.71,0,0,1-5.87-7.31,95.22,95.22,0,0,0-4.85,10.41.5.5,0,0,1-.43.24c-1.18.14-4.15-.83-4.31-2.16a1.3,1.3,0,0,1,0-.27c.71-3.87,3.56-9.87,5.45-13.88-3.41-4.77-5.92-8.77-6-9.26C45.29,8.92,46.67,5.13,47.66,5c.49-.06,3.18,4.14,6.54,9.47,3.32-6,6.87-11,7.82-11.1,1.37-.16,3,1.65,3.25,3.36a3.09,3.09,0,0,1-.43,2C63.87,10.31,59.9,17,58,20.57Z" fill="#db4648"/><path d="M77.92,33.5c-5.14.6-10.09-6-11.21-15.72-1.09-10,4.43-15.69,6.1-15.88a3.86,3.86,0,0,1,2,.58C75.57,2,76.58.77,78.1.59,80.58.3,85,3.38,86.22,14.24c0,.49.08,1.07.14,1.6C87.31,26.62,83.1,32.9,77.92,33.5Zm-2.1-27c-1.71.2-4.26,4.86-3.41,12.13.73,6.33,3.61,9.81,5.36,9.61S81.89,24.55,81,16.81C80.2,9.61,77.65,6.32,75.82,6.53Z" fill="#db4648"/><path d="M93.7,35.72c-.35,0-.74,0-.78-.37-.1-.84,1.52-2.84,1.44-3.53a.31.31,0,0,0-.34-.31,1.77,1.77,0,0,1-1.64-1.78c-.3-2.59.54-3.3,2.22-3.5a2.38,2.38,0,0,1,2.88,2.14c0,.15,0,.27,0,.38C97.53,30.83,95.6,35.5,93.7,35.72Z" fill="#db4648"/><path d="M61,66.49c0,.42-.34.55-.86.56a4,4,0,0,1-2.81-1.18c-.31-.72-6.13-12.29-6.13-12.29a59.65,59.65,0,0,0-.55,9.23c0,1.36.24,2.69.26,4a.61.61,0,0,1-.62.59c-.63,0-3.36-1.5-3.45-3.1-.06-1.09-.11-2.33-.14-3.72-.12-5.26,0-12.12.37-16.09a2.81,2.81,0,0,1,2.94-2.43c.61,0,1.1.13,1.19.4.38.78,6.47,13.89,6.47,13.89-.15-1.3-.21-2.72-.24-4.13a81.7,81.7,0,0,1,.44-10.38c.08-.55.35-.8.77-.81,1.09,0,3.44,1.2,3.46,2.19v.09C61.27,49,61.13,60.62,61,66.49Z" fill="#db4648"/><path d="M78.56,59.82a2,2,0,0,1-.39,1.31c-2.69,3-6.67,4.92-8.75,5-1.36,0-3.84-1.34-4-2.06a43.17,43.17,0,0,1-1.2-10.65c-.1-4.87.3-8.38.9-10.09.4-1.16,4.08-1.45,6.92-1.51a31.14,31.14,0,0,1,3.12.05,3.36,3.36,0,0,1,2.5,2.52c0,.33-.2.58-.74.62-1.72.13-6.25.71-7.62,1.38-.06,1.36-.12,2.78-.11,4.62a8.18,8.18,0,0,0,1,0,15.26,15.26,0,0,0,5.09-.89h.09c.33,0,.64.62.66,1.32a2.06,2.06,0,0,1-.93,1.86,19.9,19.9,0,0,1-5.91,2.22c0,1.6.22,4.47.35,6.43a22.41,22.41,0,0,0,8.4-3.39s0,0,.06,0a.46.46,0,0,1,.3.21A1.94,1.94,0,0,1,78.56,59.82Z" fill="#db4648"/><path d="M94.42,45.36l-.9,0a21.19,21.19,0,0,0-4.13.55c-.14,2-.22,5.36-.17,7.5,0,2.45.25,8.79.7,11.53,0,.34-1.19.82-2.46.84-.79,0-1.49-.18-1.65-.72A56.64,56.64,0,0,1,84.3,52.65a48.1,48.1,0,0,1,.16-5.48,18.32,18.32,0,0,1-2.81.46,3.15,3.15,0,0,1-3.08-2.93c0-.48.16-.91.58-1,4.48-1.18,7.87-2.41,12.1-2.5a21.58,21.58,0,0,1,2.75.09c.67.08.93,1,1,2,0,.12,0,.21,0,.33C95,44.56,94.7,45.35,94.42,45.36Z" fill="#db4648"/><path d="M110.15,60.71a1.25,1.25,0,0,1-.46,1.12c-2.38,1.63-6.18,3.53-8.66,3.58-1.33,0-3.9-1.31-4.1-2.06a35.48,35.48,0,0,1-1.15-8.41c-.08-4,.3-11.43.87-12.87.29-.67,1.79-1.37,2.91-1.39s1.46.45,1.5,2.38c0,2.54-.51,7.24-.36,14.22a26.4,26.4,0,0,0,.33,4h.3a25.26,25.26,0,0,0,8.12-2,.1.1,0,0,0,.06,0c.09,0,.19.09.28.21A2.45,2.45,0,0,1,110.15,60.71Z" fill="#db4648"/><path d="M115.21,65.22c-.91,0-1.79-.17-1.95-.77a54.17,54.17,0,0,1-1.5-12.06c-.11-4.87.33-8.42.89-10.12.18-.52.66-.68,1.23-.69A3.3,3.3,0,0,1,117,44.47c0,1.48-.24,5.9-.18,8.47s.22,8.8.67,11.51C117.5,64.78,116.39,65.2,115.21,65.22Z" fill="#db4648"/><path d="M133.81,43.14c0,.33-.2.58-.74.62-1.73.13-6.25.71-7.62,1.38-.1,1.36-.14,3.39-.13,5.23a7.2,7.2,0,0,0,.81,0,25.35,25.35,0,0,0,5.46-.75c.33,0,.77.5.79,1.49a1.64,1.64,0,0,1-1,1.72,49.62,49.62,0,0,1-6,1.43c0,1.06,0,3.42.08,6.11,0,1.35,0,2.78.15,4.19,0,.34-.24.49-.63.5-1.06,0-3.22-1-3.49-1.92a40,40,0,0,1-1-8.77c-1.19-.43-1.65-2.09-1.67-3,0-.73.31-.85,1-.87a3.88,3.88,0,0,1,.6,0c0-1.63.13-2.67.11-3.63a6.9,6.9,0,0,0-.19-1.54l-.18,0c-.88,0-1.11-.94-1.13-1.82a5.47,5.47,0,0,1,.21-1.66c.4-.92,4.81-1.35,8.28-1.42a23.74,23.74,0,0,1,3.84.12,3.75,3.75,0,0,1,2.44,2.13A2.16,2.16,0,0,1,133.81,43.14Z" fill="#db4648"/><path d="M149.36,40.93c0,1.45-4.26,12.37-5.09,14.68,0,1.12,0,2.21,0,3.27a35.15,35.15,0,0,0,.38,4.86c0,.36-1.28.81-2.55.84-.88,0-1.73-.15-1.89-.72a37.06,37.06,0,0,1-1.12-8.26c-1.26-2.24-5.64-11.79-5.67-13.42,0-.94,2.67-2.23,3.67-2.26.33,0,.54.08.58.29.26,2.45,3.65,9.39,4.12,10.17,0,0,2.91-9.35,3.82-10.34a1,1,0,0,1,.55-.13c1,0,2.79.33,3.16.87A1.3,1.3,0,0,1,149.36,40.93Z" fill="#db4648"/>
+        </svg>
+      </p>
     </section>
-    <a class="valentine" href="/customize"><img src="/img/valentine2.svg" alt="" /></a>
-    <a class="valentine" href="/customize-logged-out"><img src="/img/valentine1.svg" alt="" /></a>
-    <a class="valentine" href=""><img src="/img/valentine2.svg" alt="" /></a>
-    <a class="valentine" href=""><img src="/img/valentine2.svg" alt="" /></a>
-    <a class="valentine" href=""><img src="/img/valentine2.svg" alt="" /></a>
-    <a class="valentine" href=""><img src="/img/valentine2.svg" alt="" /></a>
-    <a class="valentine" href=""><img src="/img/valentine1.svg" alt="" /></a>
-    <a class="valentine" href=""><img src="/img/valentine1.svg" alt="" /></a>
-    <a class="valentine" href=""><img src="/img/valentine2.svg" alt="" /></a>
-    <a class="valentine" href=""><img src="/img/valentine2.svg" alt="" /></a>
-    <a class="valentine" href=""><img src="/img/valentine1.svg" alt="" /></a>
-    <a class="valentine" href=""><img src="/img/valentine1.svg" alt="" /></a>
-    
+    <!-- TODO Lynn: Better alt descriptions -->
+    <a class="valentine" href="/customize">
+      <img src="/img/valentines/hello-world.svg" alt="You had me at Hello World" />
+    </a>
+    <a class="valentine" href="/customize-logged-out">
+      <img src="/img/valentines/fave-dependency.svg" alt="You’re my favorite dependency" />
+    </a>
+    <a class="valentine" href="#">
+      <img src="/img/valentines/div-without-you.svg" alt="I just couldn’t <div></div> without you" />
+    </a>
+    <a class="valentine" href="#">
+      <img src="/img/valentines/run-array-with-me.svg" alt="Run array with me" />
+    </a>
+    <a class="valentine" href="#">
+      <img src="/img/valentines/jamstack.svg" alt="You’re my Jam(stack)" />
+    </a>
+    <a class="valentine" href="#">
+      <img src="/img/valentines/easy-to-commit.svg" alt="You make it easy to commit" />
+    </a>
+    <a class="valentine" href="#">
+      <img src="/img/valentines/gui-u-and-i.svg" alt="You can’t spell GUI without U and I" />
+    </a>
+    <a class="valentine" href="#">
+      <img src="/img/valentines/unicode-u-n-i.svg" alt="You can’t spell Unicode with U ‘n’ I" />
+    </a>
+    <a class="valentine" href="#">
+      <img src="/img/valentines/function-without-you.svg" alt="I couldn’t function {hearts} without you" />
+    </a>
+    <a class="valentine" href="#">
+      <img src="/img/valentines/every-version.svg" alt="Every version of you is great" />
+    </a>
+    <a class="valentine" href="#">
+      <img src="/img/valentines/lgtm.svg" alt="Your code always LGTM" />
+    </a>
+    <a class="valentine" href="#">
+      <img src="/img/valentines/outta-my-head.svg" alt="I can’t get you out of my <head></head>" />
+    </a>
+    <a class="valentine" href="#">
+      <img src="/img/valentines/git-push.svg" alt="You can’t git push without ‘us’" />
+    </a>
+    <a class="valentine" href="#">
+      <img src="/img/valentines/part-of-my-stack.svg" alt="I’m glad you’re part of my stack" />
+    </a>
+    <a class="valentine" href="#">
+      <img src="/img/valentines/thank-you.svg" alt="Thank you for building a better web" />
+    </a>
+    <!-- TODO Lynn: create and link to downloadable zip of art files -->
+    <!-- TODO Lynn: style this better -->
+    <a class="download" href="#">
+      <span>Download all of these valentines</span>
+    </a>
 
   </div>
 </main>
