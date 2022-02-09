@@ -19,13 +19,14 @@ exports.render = function(data) {
   <meta name="twitter:card" content="summary_large_image">
   <meta content="@Netlify" name="twitter:site">
   <meta content="@Netlify" name="twitter:creator">
-  <meta content="" name="twitter:title" property="og:title">
-  <meta content="" name="twitter:description" property="og:description">
-  <meta content="" property="og:url">
-  <meta content="" property="twitter:url">
-  <meta content="" property="og:image">
-  <meta content="" name="twitter:image">
-  <!-- TODO Lynn: make an OG image for the default view -->
+  <meta content="Open source, Open hearts" name="twitter:title" property="og:title">
+  <meta content="To show our love for the OSS community, join us in sending a valentine—a token of appreciation—to your favorite open source developers and projects." name="twitter:description" property="og:description">
+  <!-- TODO: double check final URL -->
+  <meta content="https://oss.love" property="og:url">
+  <meta content="https://oss.love" property="twitter:url">
+  <!-- TODO: recipient view needs custom OG -->
+  <meta content="https://oss.love/img/oss-og.png" property="og:image">
+  <meta content="https://oss.love/img/oss-og.png" name="twitter:image">
   <link rel="stylesheet" href="/styles.css">
 </head>
 
