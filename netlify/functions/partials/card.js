@@ -12,7 +12,7 @@ module.exports = (data) => {
         <button>Copy</button>
         <button>Tweet</button>
       </section>
-      <img src="/img/${data.cardVariant}" alt="" class="valentine" />
+      <img src="/img/valentines/${data.cardVariant}" alt="" class="valentine" />
       <code>
         <pre>
           This page comes with some data...
