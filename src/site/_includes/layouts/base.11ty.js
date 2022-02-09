@@ -51,7 +51,6 @@ exports.render = function(data) {
 
   ${data.content}
 
-  <!-- TODO Lynn: Add Netlify content + link to /open-source -->
   <!-- Footer -->
   <footer class="footer-main">
     <div class="grid">
