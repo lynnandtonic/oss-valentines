@@ -1,0 +1,14 @@
+
+
+query FetchGitHubUserData($gitHubOAuthToken: String!, $login: String!) @netlify(id: """5d6aa26f-076c-48f8-89e4-bb4e7ff9a78e""", doc: """FetchGithubUserData""") {
+  gitHub(auths: {gitHubOAuthToken: $gitHubOAuthToken}) {
+    user(login: $login) {
+      login
+      name
+      avatarUrl
+      viewerCanSponsor
+      viewerIsSponsoring
+      isSponsoringViewer
+    }
+  }
+}

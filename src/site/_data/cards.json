@@ -1,0 +1,17 @@
+[
+  { "image": "hello-world", "title": "You had me at Hello World" },
+  { "image": "fave-dependency", "title": "You’re my favorite dependency" },
+  { "image": "div-without-you", "title": "I just couldn’t <div></div> without you" },
+  { "image": "run-array-with-me", "title": "Run array with me" },
+  { "image": "jamstack", "title": "You’re my Jam(stack)" },
+  { "image": "easy-to-commit", "title": "You make it easy to commit" },
+  { "image": "gui-u-and-i", "title": "You can’t spell GUI without U and I" },
+  { "image": "unicode-u-n-i", "title": "You can’t spell Unicode with U ‘n’ I" },
+  { "image": "function-without-you", "title": "I couldn’t function {hearts} without you" },
+  { "image": "every-version", "title": "Every version of you is great" },
+  { "image": "lgtm", "title": "Your code always LGTM" },
+  { "image": "outta-my-head", "title": "I can’t get you out of my <head></head>" },
+  { "image": "git-push", "title": "You can’t git push without ‘us’" },
+  { "image": "part-of-my-stack", "title": "I’m glad you’re part of my stack" },
+  { "image": "thank-you", "title": "Thank you for building a better web" }
+]

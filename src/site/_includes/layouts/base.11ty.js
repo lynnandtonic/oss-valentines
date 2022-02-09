@@ -1,5 +1,6 @@
 exports.data = {
-  title: "My Rad Blog"
+  title: "Open source, open hearts",
+  bannerTitle: "Share the love"
 };
 
 exports.render = function(data) {
@@ -32,9 +33,10 @@ exports.render = function(data) {
 
 <body class="${data.pageClass}">
   <header>
-    <a href="#" class="masthead"><img src="/img/netlify-logo-full.svg" alt="Netlify" /> 💗 OSS</a>
-    <button id="gh-login">Log in with GitHub</button>
-    <h2 class="instructions">Choose a card<span>💌</span></h2>
+  
+      <a href="/" class="masthead"><img src="/img/netlify-logo-full.svg" alt="Netlify" /> 💗 OSS</a>
+      <button class="button" id="gh-login" href="/.netlify/functions/auth-login">Log in with GitHub</a>
+      <h2 class="instructions">${data.bannerTitle}<span>💌</span></h2>
   </header>
 
   

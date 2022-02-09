@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.11ty.js
-pageClass: view-choose 
+pageClass: view-choose
+bannerTitle: Choose a card
 ---
 
 
@@ -17,52 +18,15 @@ pageClass: view-choose
         </svg>
       </p>
     </section>
+    
     <!-- TODO Lynn: Better alt descriptions -->
-    <a class="valentine" href="/customize">
-      <img src="/img/valentines/hello-world.svg" alt="You had me at Hello World" />
+    <!-- Fnd them all in _data/cards.json for convenience -->
+    {% for card in cards %}
+    <a class="valentine" href="/customize/{{card.image}}/">
+      <img src="/img/valentines/{{ card.image }}.svg" alt="{{ card.title }}" />
     </a>
-    <a class="valentine" href="/customize-logged-out">
-      <img src="/img/valentines/fave-dependency.svg" alt="You’re my favorite dependency" />
-    </a>
-    <a class="valentine" href="#">
-      <img src="/img/valentines/div-without-you.svg" alt="I just couldn’t <div></div> without you" />
-    </a>
-    <a class="valentine" href="#">
-      <img src="/img/valentines/run-array-with-me.svg" alt="Run array with me" />
-    </a>
-    <a class="valentine" href="#">
-      <img src="/img/valentines/jamstack.svg" alt="You’re my Jam(stack)" />
-    </a>
-    <a class="valentine" href="#">
-      <img src="/img/valentines/easy-to-commit.svg" alt="You make it easy to commit" />
-    </a>
-    <a class="valentine" href="#">
-      <img src="/img/valentines/gui-u-and-i.svg" alt="You can’t spell GUI without U and I" />
-    </a>
-    <a class="valentine" href="#">
-      <img src="/img/valentines/unicode-u-n-i.svg" alt="You can’t spell Unicode with U ‘n’ I" />
-    </a>
-    <a class="valentine" href="#">
-      <img src="/img/valentines/function-without-you.svg" alt="I couldn’t function {hearts} without you" />
-    </a>
-    <a class="valentine" href="#">
-      <img src="/img/valentines/every-version.svg" alt="Every version of you is great" />
-    </a>
-    <a class="valentine" href="#">
-      <img src="/img/valentines/lgtm.svg" alt="Your code always LGTM" />
-    </a>
-    <a class="valentine" href="#">
-      <img src="/img/valentines/outta-my-head.svg" alt="I can’t get you out of my <head></head>" />
-    </a>
-    <a class="valentine" href="#">
-      <img src="/img/valentines/git-push.svg" alt="You can’t git push without ‘us’" />
-    </a>
-    <a class="valentine" href="#">
-      <img src="/img/valentines/part-of-my-stack.svg" alt="I’m glad you’re part of my stack" />
-    </a>
-    <a class="valentine" href="#">
-      <img src="/img/valentines/thank-you.svg" alt="Thank you for building a better web" />
-    </a>
+    {% endfor %}
+
     <!-- TODO Lynn: create and link to downloadable zip of art files -->
     <!-- TODO Lynn: style this better -->
     <a class="download" href="#">
