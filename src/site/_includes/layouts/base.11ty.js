@@ -35,7 +35,7 @@ exports.render = function(data) {
   <header>
   
       <a href="/" class="masthead"><img src="/img/netlify-logo-full.svg" alt="Netlify" /> 💗 OSS</a>
-      <button class="button" id="gh-login" href="/.netlify/functions/auth-login">Log in with GitHub</a>
+      <button class="button" id="gh-login" href="/.netlify/functions/auth-login">Log in with GitHub</button>
       <h2 class="instructions">${data.bannerTitle}<span>💌</span></h2>
   </header>
 
