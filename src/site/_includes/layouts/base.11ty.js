@@ -1,5 +1,6 @@
 exports.data = {
-  title: "My Rad Blog"
+  title: "Open source, open hearts",
+  bannerTitle: "Share the love"
 };
 
 exports.render = function(data) {
@@ -24,6 +25,7 @@ exports.render = function(data) {
   <meta content="" property="twitter:url">
   <meta content="" property="og:image">
   <meta content="" name="twitter:image">
+  <!-- TODO Lynn: make an OG image for the default view -->
   <link rel="stylesheet" href="/styles.css">
 </head>
 
@@ -31,15 +33,15 @@ exports.render = function(data) {
 
 <body class="${data.pageClass}">
   <header>
-    <a href="#" class="masthead">We ❤️ OSS</a>
+    <a href="/" class="masthead"><img src="/img/netlify-logo-full.svg" alt="Netlify" /> 💗 OSS</a>
     <button id="gh-login">Log in with GitHub</button>
-    <h2 class="instructions">Choose a card<span>💌</span></h2>
+    <h2 class="instructions">${data.bannerTitle}<span>💌</span></h2>
   </header>
 
   
   <!--
   <header>
-    <a href="#" class="masthead">We ❤️ OSS</a>
+    <a href="#" class="masthead"><img src="/img/netlify-logo-full.svg" alt="Netlify" /> 💗 OSS</a>
     <span>@lynnandtonic</span>
     <button class="gh-login">Log out</button>
     <h2 class="instructions">Review your card <span>🔍</span></h2>
@@ -48,6 +50,7 @@ exports.render = function(data) {
 
   ${data.content}
 
+  <!-- TODO Lynn: Add Netlify content + link to /open-source -->
   <!-- Footer -->
   <footer class="footer-main">
     <div class="grid">
