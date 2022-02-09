@@ -56,10 +56,10 @@ exports.render = function(data) {
   <footer class="footer-main">
     <div class="grid">
       <div class="footer-grid grid-narrow">
-        <p>Hey, you. Thank you!</p>
-        <p>The web is better with you building it.</p>
+        <h3>Netlify 💗 Open Source</h3>
+        <p>Learn about how <a href="https://www.netlify.com/open-source">we support OSS</a> and how your open source project can <a href="https://www.netlify.com/legal/open-source-policy">use Netlify for free</a>.</p>
         <a href="//netlify.com" class="netlify-logo">
-          <img src="/img/netlify-logo-mark.svg" alt="Netlify logo" />
+          <img src="/img/netlify-logo-mark-color.svg" alt="Netlify logo" />
         </a>
       </div>
     </div>
