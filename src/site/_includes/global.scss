@@ -16,7 +16,7 @@ body {
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	background-color: var(--color-red-R600);
+	background-color: white;
 	color: var(--color-gray-L800);
 	line-height: 1.5;
 	font-family: var(--font-secondary);
@@ -58,7 +58,11 @@ img {
 
 .container {
 	display: grid;
-	grid-template-columns: [full-start] minmax(1em,1fr) [main-start] minmax(0,1200px) [main-end] minmax(1em,1fr) [full-end];
+	grid-template-columns: [full-start] minmax(1em,1fr) [main-start] minmax(0,1300px) [main-end] minmax(1em,1fr) [full-end];
+}
+
+main {
+	background-color: var(--color-red-R200);
 }
 
 .container > .content {
