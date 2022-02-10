@@ -53,8 +53,8 @@ exports.render = function(data) {
   ${data.content}
 
   <!-- Footer -->
-  <footer class="footer-main">
-    <div class="grid">
+  <footer class="footer-main container">
+    <div class="content">
       <div class="footer-grid grid-narrow">
         <h3>Netlify 💗 Open Source</h3>
         <p>Learn about how <a href="https://www.netlify.com/open-source">we support OSS</a> and how your open source project can <a href="https://www.netlify.com/legal/open-source-policy">use Netlify for free</a>.</p>
