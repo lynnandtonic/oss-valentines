@@ -31,3 +31,12 @@ button:disabled {
 .js-focus-visible .button.focus-visible {
   box-shadow: 0 0 1px 4px var(--color-teal-T600);
 }
+
+.button.blue {
+  background-color: var(--color-blue-B500);
+  color: var(--color-blue-B050);
+}
+
+.button.blue:hover {
+  background-color: var(--color-blue-B700);
+}

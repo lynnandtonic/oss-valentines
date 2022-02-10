@@ -11,11 +11,12 @@
 }
 
 .view-choose .intro {
-	max-width: 450px;
-	padding-right: .5em;
+	padding: 1.5em;
 	grid-row: 1 / 4;
 	align-self: start;
 	justify-self: center;
+	border: 1px solid var(--color-red-R400);
+	align-self: stretch;
 }
 
 .view-choose .intro-steps li {
@@ -81,10 +82,17 @@
 }
 
 .view-choose .download {
-	border: 1px solid var(--color-gray-L800);
-	align-self: stretch;
+	padding: 1.5em;
+	aspect-ratio: 120/63;
 	display: grid;
-	place-content: center;
+	place-items: center;
+	border: 1px solid var(--color-red-R400);
+	text-align: center;
+}
+
+.view-choose .download p,
+.view-choose .download .button {
+	margin-top: .5em;
 }
 
 .js-focus-visible .valentine:focus:not(.focus-visible) {

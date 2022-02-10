@@ -27,7 +27,7 @@ bannerTitle: Choose a card
     </section>
     
     <!-- TODO Lynn: Better alt descriptions -->
-    <!-- Fnd them all in _data/cards.json for convenience -->
+    <!-- Find them all in _data/cards.json for convenience -->
     {% for card in cards %}
     <a class="valentine" href="/customize/{{card.image}}/">
       <img src="/img/valentines/{{ card.image }}.svg" alt="{{ card.title }}" />
@@ -35,10 +35,11 @@ bannerTitle: Choose a card
     {% endfor %}
 
     <!-- TODO Lynn: create and link to downloadable zip of art files -->
-    <!-- TODO Lynn: style this better -->
-    <a class="download" href="#">
-      <span>Download all of these valentines</span>
-    </a>
+    <div class="download">
+      <h3>Open mailboxes</h3>
+      <p>Send ‘em the old fashioned way.</p>
+      <a href="" class="button blue">Download valentines</a>
+    </div>
 
   </div>
 </main>
