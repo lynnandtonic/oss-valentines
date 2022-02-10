@@ -2,15 +2,15 @@
 	display: flex;
 }
 
-.view-choose .content {
+.view-choose main .content {
 	min-height: 400px;
 	display: grid;
 	gap: 1.5em;
 	align-items: end;
 }
 
-@media screena and (min-width: 350px) {
-	.view-choose .content {
+@media screen and (min-width: 350px) {
+	.view-choose main .content {
 		grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
 	}
 }

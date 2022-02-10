@@ -5,6 +5,16 @@
 
 .footer-main .content {
 	padding: 3em 0 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-main h3 {
+	display: flex;
+	align-items: center;
+	gap: .4em;
 }
 
 .footer-main p {
