@@ -13,5 +13,6 @@
   { "image": "outta-my-head", "title": "I can’t get you out of my <head></head>" },
   { "image": "git-push", "title": "You can’t git push without ‘us’" },
   { "image": "part-of-my-stack", "title": "I’m glad you’re part of my stack" },
+  { "image": "hooked", "title": "Your code’s got me hooked" },
   { "image": "thank-you", "title": "Thank you for building a better web" }
 ]

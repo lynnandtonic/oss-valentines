@@ -58,7 +58,7 @@ img {
 
 .container {
 	display: grid;
-	grid-template-columns: [full-start] minmax(1em,1fr) [main-start] minmax(0,1300px) [main-end] minmax(1em,1fr) [full-end];
+	grid-template-columns: [full-start] minmax(var(--grid-gutter),1fr) [main-start] minmax(0,1300px) [main-end] minmax(var(--grid-gutter),1fr) [full-end];
 }
 
 main {
@@ -71,7 +71,7 @@ main {
 
 @media screen and (max-width: 800px) {
 	.container > .content {
-		padding: 2em 0;
+		padding: var(--grid-gutter) 0;
 	}
 }
 

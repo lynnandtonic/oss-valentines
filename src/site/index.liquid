@@ -8,9 +8,16 @@ bannerTitle: Choose a card
 <main class="container">
   <div class="content">
     <section class="intro">
-      <h1>Open source, <br/>open hearts</h1>
-      <p>We love the open source community.</p>
+      <h1>Open source, <br/>Open hearts</h1>
       <p>Join us in sending a valentine—a token of appreciation—to your favorite open source developers and projects.</p>
+      <p>Here’s how:</p>
+      <ol class="intro-steps">
+        <li>Choose a card</li>
+        <li>Log in with GitHub</li>
+        <li>Choose recipient</li>
+        <li>Send your valentine</li>
+      </ol>
+      <p>Thank you for sharing the love with the open source community.</p>
       <p class="byline">
         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="69" viewBox="0 0 150 69">
           <title>XOXO, Netlify</title>
@@ -20,7 +27,7 @@ bannerTitle: Choose a card
     </section>
     
     <!-- TODO Lynn: Better alt descriptions -->
-    <!-- Fnd them all in _data/cards.json for convenience -->
+    <!-- Find them all in _data/cards.json for convenience -->
     {% for card in cards %}
     <a class="valentine" href="/customize/{{card.image}}/">
       <img src="/img/valentines/{{ card.image }}.svg" alt="{{ card.title }}" />
@@ -28,10 +35,11 @@ bannerTitle: Choose a card
     {% endfor %}
 
     <!-- TODO Lynn: create and link to downloadable zip of art files -->
-    <!-- TODO Lynn: style this better -->
-    <a class="download" href="#">
-      <span>Download all of these valentines</span>
-    </a>
+    <div class="download">
+      <h3>Open mailboxes</h3>
+      <p>Send ‘em the old fashioned way.</p>
+      <a href="" class="button blue">Download valentines</a>
+    </div>
 
   </div>
 </main>

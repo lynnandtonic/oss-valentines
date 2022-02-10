@@ -1,14 +1,22 @@
 .footer-main {
 	margin-top: auto;
 	padding: 3em 0 2em;
-	background-color: var(--color-teal-T900);
-	color: white;
 	text-align: center;
+}
+
+.footer-main p {
+	max-width: 460px;
+	margin: 1em auto 2em;
+	font-size: 120%;
+}
+
+.footer-main a:hover {
+	color: var(--color-teal-T600);
+	text-decoration: none;
 }
 
 .footer-main .netlify-logo {
 	display: inline-block;
-	margin-top: 1em;
 }
 
 .landing .footer-main {

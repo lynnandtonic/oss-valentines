@@ -1,5 +1,5 @@
 header {
-	padding: .5em 1rem;
+	padding: .5em var(--grid-gutter);
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
@@ -50,7 +50,7 @@ header .button {
 	}
 
 	.instructions {
-		margin: 0 -1rem;
+		margin: 0 calc(var(--grid-gutter) * -1);
 		padding: .5rem 1rem;
 		display: flex;
 		align-items: center;
