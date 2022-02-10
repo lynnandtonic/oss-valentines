@@ -11,15 +11,45 @@
 }
 
 .view-choose .intro {
-	max-width: 460px;
-	grid-row: 1/3;
-	align-self: center;
+	max-width: 450px;
+	padding-right: .5em;
+	grid-row: 1 / 4;
+	align-self: start;
 	justify-self: center;
+}
+
+.view-choose .intro-steps li {
+	margin-top: .7em;
+	counter-increment: steps-counter;
+	list-style: none;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: .5em;
+	align-items: center;
+}
+
+.view-choose .intro-steps li > * {
+	grid-column: 2;
+}
+
+.view-choose .intro-steps li::before {
+	width: 30px;
+	height: 30px;
+	grid-column: 1;
+	border-radius: 50%;
+	align-self: start; 
+	content: counter(steps-counter);
+	background-color: var(--color-red-R500);
+	display: grid;
+	place-content: center;
+	font-family: var(--font-headline);
+	font-weight: 400;
+	font-size: 80%;
+	color: white;
 }
 
 .view-choose .byline {
 	margin-top: 1.2em;
-	text-align: right;
 }
 
 :root {
