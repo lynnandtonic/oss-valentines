@@ -57,7 +57,8 @@ exports.render = function(data) {
     <div class="content">
       <div class="footer-grid grid-narrow">
         <h3>Netlify 💗 Open Source</h3>
-        <p>Learn about how <a href="https://www.netlify.com/open-source">we support OSS</a> and how your open source project can <a href="https://www.netlify.com/legal/open-source-policy">use Netlify for free</a>.</p>
+        <p>Learn about how <a href="https://www.netlify.com/open-source">we support OSS</a> and getting your project onto our <a href="https://www.netlify.com/legal/open-source-policy">free Open Source plan</a>.</p>
+        <p><a class="button blue" href="https://app.netlify.com/signup?_ga=2.112645956.1114105187.1644450539-551745678.1634056762">Get started for free</a></p>
         <a href="//netlify.com" class="netlify-logo">
           <img src="/img/netlify-logo-mark-color.svg" alt="Netlify logo" />
         </a>
