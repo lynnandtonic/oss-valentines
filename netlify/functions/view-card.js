@@ -46,7 +46,7 @@ const handler = async(event) => {
       content: card(data[0]),
       pageClass: "view-card view-share",
       bannerTitle: "For you",
-      scripts: []
+      scripts: ["previewing.js"]
     }
 
     return {
