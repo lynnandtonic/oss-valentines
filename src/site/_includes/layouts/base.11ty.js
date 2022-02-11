@@ -4,6 +4,16 @@ exports.data = {
   scripts: []
 };
 
+
+
+const ogURL = (path) => {
+  if (path) {
+    return `https://oss.love/og/${path}`;
+  } else {
+    return `https://oss.love/img/oss-og.png!!!`
+  }
+};
+
 exports.render = function(data) {
   return `
 <!doctype html>
@@ -26,8 +36,8 @@ exports.render = function(data) {
   <meta content="https://oss.love" property="og:url">
   <meta content="https://oss.love" property="twitter:url">
   <!-- TODO: recipient view needs custom OG -->
-  <meta content="https://oss.love/img/oss-og.png" property="og:image">
-  <meta content="https://oss.love/img/oss-og.png" name="twitter:image">
+  <meta content="${ogURL(data.ogPath)}" property="og:image">
+  <meta content="${ogURL(data.ogPath)}" name="twitter:image">
   <link rel="stylesheet" href="/styles.css">  
 </head>
 
