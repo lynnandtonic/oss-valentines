@@ -18,6 +18,12 @@
   .view-card .cta button {
     align-self: flex-end;
   }
+  .view-card .cta .button-group {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    justify-content: right;
+  }
 }
 
 @media screen and (min-width: 601px) {
