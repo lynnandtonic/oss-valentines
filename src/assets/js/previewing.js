@@ -1,13 +1,16 @@
 (async function() {
 
+  const body = document.getElementsByTagName("body")[0];
   if (document.referrer) {
     const referrer = new URL(document.referrer);
-    if (referrer.pathname = "/customize/") {
-      const body = document.getElementsByTagName("body")[0];
-      body.classList.add("previewing")
+    if (referrer.pathname.indexOf("/customize/") !== -1) {
+      console.log(`previewing`);
+      body.classList.add("previewing");
     }
+  } else {
+    console.log(`enjoying`);
+    body.classList.add("gifted");
   }
-
 
   btnHandler(".copy-url", function() {
     const copyFeedback = document.querySelector(".copy-success");
