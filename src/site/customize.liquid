@@ -7,17 +7,16 @@ pagination:
   alias: card
   size: 1
 permalink: "/customize/{{card.image}}/index.html"
-scripts: ["init.js"]
+scripts: ["init.js","customize.js"]
 ---
 
 
   <main class="container">
     <div class="content">
-      <section class="cta" id="cta">
+      <section class="cta" id="customize-cta">
       </section>
       {% comment %} <section class="cta">
         <p>If everything looks correct, let’s get this valentine on its way.</p>
-
       </section> {% endcomment %}
       <div class="card">
         <img src="/img/valentines/{{card.image}}.svg"  alt="{{card.title}}" class="valentine" />
