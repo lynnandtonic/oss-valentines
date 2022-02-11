@@ -8,8 +8,8 @@ export const handler: Handler = async (event) => {
 
   const { data } = await exchangeWebFlowCode({
     clientType: 'oauth-app',
-    clientId: process.env.GITHUB_APP_CLIENT_ID,
-    clientSecret: process.env.GITHUB_APP_CLIENT_SECRET,
+    clientId: process.env.GITHUB_APP_CLIENT_ID_DEV,
+    clientSecret: process.env.GITHUB_APP_CLIENT_SECRET_DEV,
     code,
   });
 
