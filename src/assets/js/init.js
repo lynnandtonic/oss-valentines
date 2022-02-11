@@ -123,11 +123,11 @@ async function checkLoggedIn() {
 
 function toggleHeaderLogin() {
   if (localUser) {
-    displayTemplate("#auth-cta", "#header-logged-in");
+    displayTemplate("#header-auth", "#header-logged-in");
     const handle = document.querySelector(".logged-in-user");
     handle.innerHTML = `@${localUser.login}`;
   } else {
-    displayTemplate("#auth-cta", "#header-logged-out");
+    displayTemplate("#header-auth", "#header-logged-out");
   }
 }
 
