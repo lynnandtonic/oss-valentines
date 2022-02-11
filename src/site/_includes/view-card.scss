@@ -5,7 +5,7 @@
   padding: 1em;
   background-color: white;
   display: flex;
-  gap: 1em;
+  gap: .8em;
 }
 
 @media screen and (max-width: 600px) {
@@ -33,7 +33,7 @@
 
 .view-card .cta .button-group {
   display: flex;
-  gap: 1em;
+  gap: .8em;
   justify-content: right;
 }
 
@@ -48,11 +48,22 @@
 
 .view-card .cta .copy-success {
   /*display: none;*/
-  width: 100%;
   display: block;
   position: absolute;
-  top: -.5em;
-  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .view-card .cta .copy-success {
+    left: -50%;
+    top: 40%;
+  }
+}
+@media screen and (min-width: 601px) {
+  .view-card .cta .copy-success {
+    width: 100%;
+    top: -1.5em;
+    text-align: center;
+  }
 }
 
 .view-card .valentine,
@@ -129,14 +140,14 @@
 }
 
 .view-share .share-link {
-  padding: .4em;
+  padding: .5em;
   display: block;
   background-color: var(--color-gray-L300);
   border-radius: 3px;
   flex-grow: 1;
   text-align: center;
   line-height: 1;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-decoration: none;
   word-break: break-word;
 }
