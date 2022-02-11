@@ -120,33 +120,30 @@
   position: relative;
 }
 
-// TODO: Calculate font size to fit the card size
-.card .recipient-user-handle {
+.card .user-avatar {
   position: absolute;
-  bottom: 10%;
-  left: 13%;
-  font-size: 1.2em;
+  width: 6%;
+  bottom: 7.5%;
+  border-radius: 50%;
 }
 
 .card .recipient-user-avatar {
-  position: absolute;
-  bottom: 8%;
-  left: 6%;
-  border-radius: 50%;
-  width: 6%;
+  left: 6.5%;
 }
-
-.card .logged-in-user-handle {
-  position: absolute;
-  bottom: 10%;
-  left: 65%;
-  font-size: 1.2em;
-}
-
 .card .logged-in-user-avatar {
+  left: 58.5%;
+}
+
+.card .user-handle {
   position: absolute;
-  bottom: 8%;
-  left: 58%;
-  border-radius: 50%;
-  width: 6%;
+  bottom: 9.8%;
+  font-size: 1em;
+  font-size: clamp(.5em, 2vw, 1.2em);
+}
+
+.card .recipient-user-handle {
+  left: 13%;
+}
+.card .logged-in-user-handle {
+  left: 65.5%;
 }

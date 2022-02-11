@@ -17,12 +17,12 @@ module.exports = (data) => {
       <div class="card">
         <img src="/img/valentines/${data.cardVariant}" alt="" class="valentine" />
         <div class="recipient-details">
-          <img class="recipient-user-avatar" src="${data.recipientAvatar}" alt="" />
-          <div class="recipient-user-handle">${data.recipientName}</div>
+          <img class="user-avater recipient-user-avatar" src="${data.recipientAvatar}" alt="" />
+          <div class="user-handle recipient-user-handle">${data.recipientName}</div>
         </div>
         <div class="sender-details">
-          <img class="logged-in-user-avatar" src="${data.senderAvatar}" alt="" />
-          <div class="logged-in-user-handle">${data.senderName}</div>
+          <img class="user-avater logged-in-user-avatar" src="${data.senderAvatar}" alt="" />
+          <div class="user-handle logged-in-user-handle">${data.senderName}</div>
         </div>
       </div>
       
