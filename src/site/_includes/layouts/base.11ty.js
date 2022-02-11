@@ -42,7 +42,7 @@ exports.render = function(data) {
         <span>OSS</span>
       </a>
       <div id="header-auth">
-        <button class="button" id="gh-login" href="/.netlify/functions/auth-login">Log in with GitHub</button>
+        <button class="button" id="gh-login" href="/auth/login">Log in with GitHub</button>
       </div>
       <h2 class="instructions">${data.bannerTitle}
         <svg xmlns="http://www.w3.org/2000/svg" width="62" height="23" viewBox="0 0 62 23"><title>hearts</title><path d="M42.34,8.16A5.25,5.25,0,0,0,41,6.31a5.76,5.76,0,0,0-3.56-1.83,5.33,5.33,0,0,0-3.74,1.83,11.75,11.75,0,0,0-2.2,3.12,9.38,9.38,0,0,0-3.3-4.13A5.9,5.9,0,0,0,23,4.56a4.32,4.32,0,0,0-2.85,4.17c.14,1.73,1.44,3.11,2.67,4.33q4.62,4.57,9.39,9l7.64-7.87C41.43,12.53,43.17,10.31,42.34,8.16Z" fill="#ff6b60" stroke="#1c2126" stroke-linejoin="round"/><path d="M61.34,6.8a3.84,3.84,0,0,0-.69-1.56,4.24,4.24,0,0,0-2.24-1.9,3.92,3.92,0,0,0-3,.68,8.52,8.52,0,0,0-2.1,1.87,7,7,0,0,0-1.67-3.51A4.36,4.36,0,0,0,48.07,1a3.18,3.18,0,0,0-2.74,2.51A5.46,5.46,0,0,0,46.52,7q2.55,4.05,5.22,8l6.79-4.36C60,9.78,61.57,8.48,61.34,6.8Z" fill="#ff6b60" stroke="#1c2126" stroke-linejoin="round"/><path d="M15.78,2.18a3.76,3.76,0,0,0-1.48-.84,4.19,4.19,0,0,0-2.93-.2,3.94,3.94,0,0,0-2,2.32A8.65,8.65,0,0,0,8.8,6.21,7,7,0,0,0,5.37,4.38a4.38,4.38,0,0,0-3.72,1A3.18,3.18,0,0,0,.94,9,5.49,5.49,0,0,0,4,11.19q4.46,1.74,9,3.33c.95-2.51,1.91-5,2.87-7.54C16.44,5.4,17,3.39,15.78,2.18Z" fill="#ff6b60" stroke="#1c2126" stroke-linejoin="round"/></svg>
