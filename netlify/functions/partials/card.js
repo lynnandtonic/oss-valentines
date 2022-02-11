@@ -9,8 +9,8 @@ module.exports = (data) => {
         <p class="center">Send this URL to your OSS valentine.</p>
         <!-- NOTE: Clicking this should probably copy the URL to your clipboard and not link to the page? -->
         <a href="/card/${data.path}" class="share-link">https://oss.love/card/${data.path}</a>
-        <button>Copy</button>
-        <button>Tweet</button>
+        <button class="copy-url">Copy</button>
+        <button class="tweet-link">Tweet</button>
       </section>
       
       

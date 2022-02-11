@@ -122,8 +122,3 @@ function setRecipientUser(data) {
   toggleHeaderLogin();
   toggleCardUI();
 })();
-
-
-
-
-// showShareCTA();

@@ -8,4 +8,10 @@
     }
   }
 
+
+  btnHandler(".add-copy-url", function() {
+    navigator.clipboard.readText()
+      .then(clipText => document.querySelector(".share-link").innerText += clipText);
+  });
+
 })();
