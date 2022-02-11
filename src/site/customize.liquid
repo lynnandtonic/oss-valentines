@@ -7,14 +7,13 @@ pagination:
   alias: card
   size: 1
 permalink: "/customize/{{card.image}}/index.html"
+scripts: ["init.js"]
 ---
 
 
   <main class="container">
     <div class="content">
-      <section class="cta">
-        <p>Choose a recipient and add your signature by connecting to GitHub</p>
-        <a href="/customize-logged-in" class="button gh-login">Log in with GitHub</a>
+      <section class="cta" id="cta">
       </section>
       {% comment %} <section class="cta">
         <p>If everything looks correct, let’s get this valentine on its way.</p>
@@ -30,3 +29,15 @@ permalink: "/customize/{{card.image}}/index.html"
       <img src="/img/valentines/{{card.image}}.svg"  alt="{{card.title}}" class="valentine" />
     </div>
   </main>
+
+
+
+  <template id="logged-in">
+    <input type="text" placeholder="Find a recipient on GitHub">
+    <a href="/donate" class="button add-recipient">Add recipient</a>
+  </template>
+  <template id="logged-out">
+    <p>Choose a recipient and add your signature by connecting to GitHub</p>
+    <a href="/customize-logged-in" class="button gh-login">Log in with GitHub</a>
+  </template>
+

@@ -1,6 +1,7 @@
 exports.data = {
   title: "Open source, open hearts",
-  bannerTitle: "Share the love"
+  bannerTitle: "Share the love",
+  scripts: []
 };
 
 exports.render = function(data) {
@@ -27,29 +28,27 @@ exports.render = function(data) {
   <!-- TODO: recipient view needs custom OG -->
   <meta content="https://oss.love/img/oss-og.png" property="og:image">
   <meta content="https://oss.love/img/oss-og.png" name="twitter:image">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles.css">  
 </head>
 
 <!-- TODO: Componentize the views properly -->
 
 <body class="${data.pageClass}">
   <header>
-  
       <a href="/" class="masthead"><img src="/img/netlify-logo-full.svg" alt="Netlify" /> 💗 OSS</a>
-      <button class="button" id="gh-login" href="/.netlify/functions/auth-login">Log in with GitHub</button>
+      <div id="auth-cta"></div>
       <h2 class="instructions">${data.bannerTitle}<span>💌</span></h2>
   </header>
 
+  <template id="header-logged-in">
+    <span class="logged-in-user"></span>
+    <a class="button" href="/auth/logout">Log out</a>
+  </template>
   
-  <!--
-  <header>
-    <a href="#" class="masthead"><img src="/img/netlify-logo-full.svg" alt="Netlify" /> 💗 OSS</a>
-    <span>@lynnandtonic</span>
-    <button class="gh-login">Log out</button>
-    <h2 class="instructions">Review your card <span>🔍</span></h2>
-  </header> 
-  -->
-
+  <template id="header-logged-out">
+   <a class="button" href="/auth/login">Log in with GitHub</a>
+  </template>
+  
   ${data.content}
 
   <!-- Footer -->
@@ -65,8 +64,9 @@ exports.render = function(data) {
     </div>
   </footer>
 
+
   <script src="/js/focus-visible.min.js"></script>
-  <script src="/js/review-cta.js"></script>
+  ${data.scripts.map(s => '<script src="/js/'+s+'"></script>').join("")}
 </body>
 
 </html>`;
