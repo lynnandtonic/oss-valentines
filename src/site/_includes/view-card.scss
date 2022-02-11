@@ -81,12 +81,11 @@
 .view-card.view-share .cta,
 .view-card.view-recipient .cta {
   margin-top: -1em;
-  background-color: transparent;
   flex-wrap: wrap;
 }
 
-.view-card.view-share .cta>div {
-  background-color: white;
+.view-card.view-recipient .cta {
+  background-color: transparent;
 }
 
 .view-card .cta .center {
@@ -96,7 +95,7 @@
 .view-share .share-link {
   padding: .5em;
   display: block;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: var(--color-gray-L200);
   border-radius: 3px;
   flex-grow: 1;
   text-align: center;
