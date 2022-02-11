@@ -65,7 +65,7 @@ exports.render = function(data) {
   
   <template id="header-logged-out">
    <a class="button gh-login" href="/auth/login">Log in with GitHub</a>
-   <a class="button make-your-own" href="/">Make your own</a>
+   <a class="button make-your-own" href="/">Create your own</a>
   </template>
   
   ${data.content}
