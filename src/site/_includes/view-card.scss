@@ -59,6 +59,7 @@
   .view-card .cta .recipient-success {
     left: -105%;
     top: 20%;
+    text-align: right;
   }
 }
 @media screen and (min-width: 601px) {
@@ -207,4 +208,35 @@
 }
 .card .logged-in-user-handle {
   left: 65.5%;
+}
+
+/* Sponsorship */
+.sponsor {
+  max-width: 900px;
+  margin: 2em auto 1em;
+  padding: 1em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1em;
+  border: 1px solid var(--color-red-R400);
+}
+
+.sponsor p {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .sponsor {
+    flex-direction: column;
+  }
+  .sponsor .button {
+    align-self: flex-end;
+  }
+}
+@media screen and (min-width: 601px) {
+  .sponsor {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
