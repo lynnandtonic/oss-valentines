@@ -77,9 +77,9 @@ exports.render = function(data) {
   <footer class="footer-main container">
     <div class="content">
       <h3>Netlify <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25"><title>heart</title><path d="M30.14,5.86A7,7,0,0,0,28.29,3.4,7.64,7.64,0,0,0,23.56,1a7,7,0,0,0-5,2.43,15.68,15.68,0,0,0-2.93,4.15,12.47,12.47,0,0,0-4.39-5.49,7.84,7.84,0,0,0-6.89-1A5.73,5.73,0,0,0,.59,6.62c.18,2.3,1.91,4.14,3.55,5.76q6.15,6.09,12.49,12L26.8,13.87C28.94,11.67,31.25,8.72,30.14,5.86Z" fill="#ff6b60" stroke="#ff6b60" stroke-linejoin="round"/></svg> Open Source</h3>
-      <p>Learn about how <a href="https://www.netlify.com/open-source">we support OSS</a> and getting your project onto our <a href="https://www.netlify.com/legal/open-source-policy">free Open Source plan</a>.</p>
-      <p><a class="button blue" href="https://app.netlify.com/signup?_ga=2.112645956.1114105187.1644450539-551745678.1634056762">Get started for free</a></p>
-      <a href="//netlify.com" class="netlify-logo">
+      <p>Learn about how <a href="https://netlify.com/open-source?utm_campaign=oss-love">we support OSS</a> and getting your project onto our <a href="https://netlify.com/legal/open-source-policy?utm_campaign=oss-love">free Open Source plan</a>.</p>
+      <p><a class="button blue" href="https://app.netlify.com/signup?utm_campaign=oss-love">Get started for free</a></p>
+      <a href="//netlify.com?utm_campaign=oss-love" class="netlify-logo">
         <img src="/img/netlify-logo-mark-color.svg" alt="Netlify logo" />
       </a>
     </div>

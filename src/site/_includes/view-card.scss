@@ -5,13 +5,13 @@
   padding: 1em;
   background-color: white;
   display: flex;
-  gap: 1em;
+  gap: .8em;
 }
 
 @media screen and (max-width: 600px) {
   .view-card .cta {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     font-size: 90%;
   }
   .view-card .cta .button,
@@ -31,9 +31,43 @@
   margin-right: auto;
 }
 
+.view-card .cta .button-group {
+  display: flex;
+  gap: .8em;
+  justify-content: right;
+}
+
 .view-card .cta .button,
 .view-card .cta button {
   flex-shrink: 0;
+}
+
+.view-card .cta .copy-util,
+.view-card .cta .recipient-util {
+  position: relative;
+}
+
+.view-card .cta .copy-success,
+.view-card .cta .recipient-success {
+  display: block;
+  position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+  .view-card .cta .copy-success,
+  .view-card .cta .recipient-success {
+    left: -80%;
+    top: 20%;
+  }
+}
+@media screen and (min-width: 601px) {
+  .view-card .cta .copy-success,
+  .view-card .cta .recipient-success {
+    width: 100%;
+    bottom: -1.5em;
+    text-align: center;
+    font-size: 70%;
+  }
 }
 
 .view-card .valentine,
@@ -48,9 +82,33 @@
   font-family: var(--font-secondary);
 }
 
+.view-card .search-form {
+  padding-top: 1em;
+  flex-grow: 1;
+  position: relative;
+}
+
+.view-card .search-form label {
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  font-size: 80%;
+}
+
+.view-card .search-form .username-prefix {
+  position: absolute;
+  left: .5em;
+  bottom: .2em;
+  color: var(--color-gray-L600);
+}
+
+.view-card .search-form + .button-group {
+  align-self: flex-end;
+}
+
 .view-card input {
   width: 100%;
-  padding: .3em .5em;
+  padding: .3em .5em .3em 1.6em;
   display: block;
   border: 1px solid var(--color-gray-L800);
   border-radius: 4px;
@@ -67,20 +125,22 @@
   box-shadow: 0 0 1px 4px var(--color-focus-ring);
 }
 
+.view-card input.error:focus {
+  box-shadow: 0 0 1px 4px var(--color-red-R500);
+}
+
 
 /* Share view,
 /* Recipient view
 /*-------------*/
 
-.view-card.view-share .cta,
-.view-card.view-recipient .cta {
-  margin-top: -1em;
-  background-color: transparent;
+.view-card.view-share .cta {
   flex-wrap: wrap;
 }
 
-.view-card.view-share .cta>div {
-  background-color: white;
+.view-card .cta-info {
+  margin-top: -1em;
+  background-color: transparent;
 }
 
 .view-card .cta .center {
@@ -90,12 +150,12 @@
 .view-share .share-link {
   padding: .5em;
   display: block;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: var(--color-gray-L300);
   border-radius: 3px;
   flex-grow: 1;
   text-align: center;
   line-height: 1;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-decoration: none;
   word-break: break-word;
 }

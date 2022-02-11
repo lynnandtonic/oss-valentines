@@ -35,16 +35,25 @@ scripts: ["init.js","customize.js"]
 
 
   <template id="logged-in">
-    <input type="text" id="search-recipient" placeholder="Find a recipient on GitHub">
-    <a href="#" class="button add-recipient">Add recipient</a>
-    <form action="/create" method="post" name="new-valentine">
-      <input type="hidden" id="senderName" name="senderName" value="lynnandtonic" />
-      <input type="hidden" id="senderAvatar" name="senderAvatar" value="this it their avatar" />
-      <input type="hidden" id="recipientName" name="recipientName" value="eleventy" />
-      <input type="hidden" id="recipientAvatar" name="recipientAvatar" value="this it their avatar" />
-      <input type="hidden" hidden id="cardVariant" name="cardVariant"  value="{{card.image}}.svg" />
-      <input type="submit" class="button" id="ship-it" disabled value="Ship it!" />
-     </form>
+    <div class="search-form">
+      <label for="search">Enter recipient’s GitHub username</label>
+      <span class="username-prefix">@</span>
+      <input type="text" name="search" id="search-recipient">
+    </div>
+    <div class="button-group">
+      <div class="recipient-util">
+        <small class="recipient-success"></small>
+        <a href="#" class="button add-recipient">Add recipient</a>
+      </div>
+      <form action="/create" method="post" name="new-valentine">
+        <input type="hidden" id="senderName" name="senderName" value="lynnandtonic" />
+        <input type="hidden" id="senderAvatar" name="senderAvatar" value="this it their avatar" />
+        <input type="hidden" id="recipientName" name="recipientName" value="eleventy" />
+        <input type="hidden" id="recipientAvatar" name="recipientAvatar" value="this it their avatar" />
+        <input type="hidden" hidden id="cardVariant" name="cardVariant"  value="{{card.image}}.svg" />
+        <input type="submit" class="button" id="ship-it" disabled value="Ship it!" />
+       </form>
+     </div>
   </template>
   <template id="logged-out">
     <p>Choose a recipient and add your signature by connecting to GitHub</p>

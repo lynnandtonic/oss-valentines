@@ -30,6 +30,16 @@ header .button {
 	font-size: 80%;
 }
 
+header #header-auth {
+	display: flex;
+	align-items: center;
+	gap: .5em;
+}
+
+header .logged-in-user {
+	font-size: 90%;
+}
+
 :root {
 	--instructions-bg: var(--color-gray-L200);
 }
