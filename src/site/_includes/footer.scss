@@ -1,13 +1,26 @@
 .footer-main {
 	margin-top: auto;
-	padding: 3em 0 2em;
 	text-align: center;
+}
+
+.footer-main .content {
+	padding: 3em 0 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-main h3 {
+	display: flex;
+	align-items: center;
+	gap: .4em;
 }
 
 .footer-main p {
 	max-width: 460px;
-	margin: 1em auto 2em;
-	font-size: 120%;
+	margin: 1em auto;
+	font-size: 110%;
 }
 
 .footer-main a:hover {
@@ -16,6 +29,7 @@
 }
 
 .footer-main .netlify-logo {
+	margin-top: 1em;
 	display: inline-block;
 }
 

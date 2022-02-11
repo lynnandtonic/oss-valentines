@@ -1,12 +1,28 @@
 .view-card .cta {
-  width: 90%;
+  width: 94%;
   max-width: 850px;
   margin: 0 auto;
   padding: 1em;
   background-color: white;
   display: flex;
   gap: 1em;
-  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .view-card .cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .view-card .cta .button,
+  .view-card .cta button {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .view-card .cta {
+    align-items: center;
+  }
 }
 
 .view-card .cta p {
@@ -48,7 +64,6 @@
 .view-card input:focus {
   box-shadow: 0 0 1px 4px var(--color-focus-ring);
 }
-
 
 /* Share view,
 /* Recipient view
