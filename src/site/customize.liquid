@@ -35,8 +35,10 @@ scripts: ["init.js","customize.js"]
 
 
   <template id="logged-in">
-    <label for="search">Enter recipient’s GitHub username</label>
-    <input type="text" name="search" id="search-recipient">
+    <div class="search-form">
+      <label for="search">Enter recipient’s GitHub username</label>
+      <input type="text" name="search" id="search-recipient">
+    </div>
     <div class="button-group">
       <a href="#" class="button add-recipient">Add recipient</a>
       <form action="/create" method="post" name="new-valentine">
