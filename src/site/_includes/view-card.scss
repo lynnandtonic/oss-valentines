@@ -55,6 +55,7 @@
 }
 
 .view-card .search-form {
+  padding-top: 1em;
   flex-grow: 1;
   position: relative;
 }
@@ -62,8 +63,12 @@
 .view-card .search-form label {
   position: absolute;
   left: 0;
-  top: -100%;
+  top: -34%;
   font-size: 80%;
+}
+
+.view-card .search-form + .button-group {
+  align-self: flex-end;
 }
 
 .view-card input {
