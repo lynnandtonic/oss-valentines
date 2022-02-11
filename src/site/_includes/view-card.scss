@@ -62,9 +62,16 @@
 
 .view-card .search-form label {
   position: absolute;
-  left: 0;
-  top: -34%;
+  left: 5px;
+  top: -5px;
   font-size: 80%;
+}
+
+.view-card .search-form .username-prefix {
+  display: absolute;
+  left: .5em;
+  bottom: .5em;
+  color: var(--color-gray-L700);
 }
 
 .view-card .search-form + .button-group {
@@ -73,7 +80,7 @@
 
 .view-card input {
   width: 100%;
-  padding: .3em .5em;
+  padding: .3em .5em .3em 1em;
   display: block;
   border: 1px solid var(--color-gray-L800);
   border-radius: 4px;
