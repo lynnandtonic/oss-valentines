@@ -8,8 +8,8 @@ export const handler: Handler = async (event) => {
 
   await deleteToken({
     clientType: 'oauth-app',
-    clientId: process.env.GITHUB_APP_CLIENT_ID_DEV,
-    clientSecret: process.env.GITHUB_APP_CLIENT_SECRET_DEV,
+    clientId: process.env.GITHUB_APP_CLIENT_ID,
+    clientSecret: process.env.GITHUB_APP_CLIENT_SECRET,
     token: auth.access_token,
   });
 
