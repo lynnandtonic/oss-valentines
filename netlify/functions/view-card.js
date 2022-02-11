@@ -46,6 +46,7 @@ const handler = async(event) => {
       content: card(data[0]),
       pageClass: "view-card view-share",
       bannerTitle: "For you",
+      ogPath: cardPath,
       scripts: ["init.js", "previewing.js"]
     }
 
