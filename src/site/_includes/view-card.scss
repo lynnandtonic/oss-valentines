@@ -78,13 +78,12 @@
 /* Recipient view
 /*-------------*/
 
-.view-card.view-share .cta,
-.view-card.view-recipient .cta {
+.view-card.view-share .cta {
   margin-top: -1em;
   flex-wrap: wrap;
 }
 
-.view-card.view-recipient .cta {
+.view-card .cta-info {
   background-color: transparent;
 }
 
@@ -93,9 +92,9 @@
 }
 
 .view-share .share-link {
-  padding: .5em;
+  padding: .4em;
   display: block;
-  background-color: var(--color-gray-L200);
+  background-color: var(--color-gray-L300);
   border-radius: 3px;
   flex-grow: 1;
   text-align: center;
