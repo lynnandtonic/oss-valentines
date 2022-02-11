@@ -13,16 +13,16 @@ function showShareCTA() {
 
 
 // simple button click event handler
-// function btnHandler(selector, callback) {
-//   var buttons = document.querySelectorAll(selector);
-//   buttons.forEach(btn => {
-//     if (!btn) { console.log(`wgart btn?`); return; }
-//     btn.addEventListener('click', function(event) {
-//       event.preventDefault();
-//       callback(event);
-//     }, false);
-//   });
-// }
+function btnHandler(selector, callback) {
+  var buttons = document.querySelectorAll(selector);
+  buttons.forEach(btn => {
+    if (!btn) { console.log(`wgart btn?`); return; }
+    btn.addEventListener('click', function(event) {
+      event.preventDefault();
+      callback(event);
+    }, false);
+  });
+}
 
 // function setUserDisplay(username, avatar) {
 
@@ -141,6 +141,7 @@ function toggleCardUI() {
     const avatar = document.querySelector(".logged-in-user-avatar");
     handle.innerHTML = `@${localUser.login}`;
     avatar.src = `${localUser.avatar_url}`;
+    btnHandler(".add-recipient", findGitHubRecipient);
 
     //update form values
     const senderName = document.querySelector("#senderName");
@@ -154,18 +155,34 @@ function toggleCardUI() {
 }
 
 
+
+// Search github for a recipient
+async function findGitHubRecipient() {
+  const username = document.querySelector("#search-recipient").value;
+  console.log(`look for a recipient, ${username}`);
+  const userData = await fetch(`/api/user/${username}`).then((res) =>
+    res.json(),
+  );
+
+  //TODO: handle search misses
+  setRecipientUser(userData);
+}
+
+
+// Update the UI with the recipient data
+function setRecipientUser(data) {
+  const handle = document.querySelector(".recipient-user-handle");
+  const avatar = document.querySelector(".recipient-user-avatar");
+  handle.innerHTML = `@${data.login}`;
+  avatar.src = `${data.avatarUrl}`;
+  document.querySelector("#ship-it").removeAttribute("disabled");
+}
+
 (async function() {
-
-
   await checkLoggedIn();
-
   console.log(JSON.stringify(localUser));
-
   toggleHeaderLogin();
   toggleCardUI();
-
-
-
 })();
 
 

@@ -121,6 +121,21 @@
 }
 
 // TODO: Calculate font size to fit the card size
+.card .recipient-user-handle {
+  position: absolute;
+  bottom: 10%;
+  left: 13%;
+  font-size: 1.2em;
+}
+
+.card .recipient-user-avatar {
+  position: absolute;
+  bottom: 8%;
+  left: 6%;
+  border-radius: 50%;
+  width: 6%;
+}
+
 .card .logged-in-user-handle {
   position: absolute;
   bottom: 10%;

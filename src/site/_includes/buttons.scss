@@ -22,6 +22,8 @@ button:hover,
   cursor: pointer;
 }
 
+input[type=submit]:disabled,
+input[type=submit]:disabled:hover,
 button:disabled {
   cursor: not-allowed;
   filter: grayscale(100%);

@@ -17,17 +17,14 @@ scripts: ["init.js"]
       </section>
       {% comment %} <section class="cta">
         <p>If everything looks correct, let’s get this valentine on its way.</p>
-        <form action="/create" method="post" name="new-valentine">
-          <input type="hidden" id="senderName" name="senderName" value="lynnandtonic" />
-          <input type="hidden" id="senderAvatar" name="senderAvatar" value="this it their avatar" />
-          <input type="hidden" id="recipientName" name="recipientName" value="eleventy" />
-          <input type="hidden" id="recipientAvatar" name="recipientAvatar" value="this it their avatar" />
-          <input type="hidden" hidden id="cardVariant" name="cardVariant"  value="{{card.image}}.svg" />
-          <input type="submit" class="button" value="Ship it!" />
-        </form>
+
       </section> {% endcomment %}
       <div class="card">
         <img src="/img/valentines/{{card.image}}.svg"  alt="{{card.title}}" class="valentine" />
+        <div class="recipient-details">
+          <img class="recipient-user-avatar" src="" alt="" />
+          <div class="recipient-user-handle"></div>
+        </div>
         <div class="sender-details">
           <img class="logged-in-user-avatar" src="" alt="" />
           <div class="logged-in-user-handle"></div>
@@ -39,8 +36,16 @@ scripts: ["init.js"]
 
 
   <template id="logged-in">
-    <input type="text" placeholder="Find a recipient on GitHub">
-    <a href="/donate" class="button add-recipient">Add recipient</a>
+    <input type="text" id="search-recipient" placeholder="Find a recipient on GitHub">
+    <a href="#" class="button add-recipient">Add recipient</a>
+    <form action="/create" method="post" name="new-valentine">
+      <input type="hidden" id="senderName" name="senderName" value="lynnandtonic" />
+      <input type="hidden" id="senderAvatar" name="senderAvatar" value="this it their avatar" />
+      <input type="hidden" id="recipientName" name="recipientName" value="eleventy" />
+      <input type="hidden" id="recipientAvatar" name="recipientAvatar" value="this it their avatar" />
+      <input type="hidden" hidden id="cardVariant" name="cardVariant"  value="{{card.image}}.svg" />
+      <input type="submit" class="button" id="ship-it" disabled value="Ship it!" />
+     </form>
   </template>
   <template id="logged-out">
     <p>Choose a recipient and add your signature by connecting to GitHub</p>
