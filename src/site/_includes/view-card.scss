@@ -18,12 +18,6 @@
   .view-card .cta button {
     align-self: flex-end;
   }
-  .view-card .cta .button-group {
-    width: 100%;
-    display: flex;
-    gap: 1em;
-    justify-content: right;
-  }
 }
 
 @media screen and (min-width: 601px) {
@@ -35,6 +29,12 @@
 .view-card .cta p {
   margin-top: 0;
   margin-right: auto;
+}
+
+.view-card .cta .button-group {
+  display: flex;
+  gap: 1em;
+  justify-content: right;
 }
 
 .view-card .cta .button,
@@ -55,7 +55,7 @@
 }
 
 .view-card input {
-  width: 100%;
+  flex-grow: 1;
   padding: .3em .5em;
   display: block;
   border: 1px solid var(--color-gray-L800);
