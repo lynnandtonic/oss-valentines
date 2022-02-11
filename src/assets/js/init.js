@@ -135,10 +135,18 @@ function toggleCardUI() {
 
   if (localUser) {
     displayTemplate("#cta", "#logged-in");
+
+    // update sender display deets
     const handle = document.querySelector(".logged-in-user-handle");
     const avatar = document.querySelector(".logged-in-user-avatar");
     handle.innerHTML = `@${localUser.login}`;
     avatar.src = `${localUser.avatar_url}`;
+
+    //update form values
+    const senderName = document.querySelector("#senderName");
+    const senderAvatar = document.querySelector("#senderAvatar");
+    senderName.value = localUser.login;
+    senderAvatar.value = localUser.avatar_url;
 
   } else {
     displayTemplate("#cta", "#logged-out");

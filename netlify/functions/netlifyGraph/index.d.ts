@@ -1,7 +1,14 @@
 // GENERATED VIA NETLIFY AUTOMATED DEV TOOLS, EDIT WITH CAUTION!
 
 export type NetlifyGraphFunctionOptions = {
+  /**
+   * The accessToken to use for the request
+   */
   accessToken?: string;
+  /**
+   * The siteId to use for the request
+   * @default process.env.SITE_ID
+   */
   siteId?: string;
 }
 
@@ -18,9 +25,9 @@ export type GraphQLError = {
 
 
 
-export type FetchGitHubUserDataInput = {"gitHubOAuthToken": string; "login": string};
+export type GitHubDataInput = {"gitHubOAuthToken": string; "login": string};
 
-export type FetchGitHubUserData = {
+export type GitHubData = {
   /**
   * Any data from the function will be returned here
   */
@@ -64,9 +71,9 @@ errors: Array<GraphQLError>;
 };
 
 /**
- * FetchGithubUserData
+ * Fetch the user data from GitHub
  */
-export function fetchFetchGitHubUserData(
-  variables: FetchGitHubUserDataInput,
+export function fetchGitHubData(
+  variables: GitHubDataInput,
   options?: NetlifyGraphFunctionOptions
-): Promise<FetchGitHubUserData>;
+): Promise<GitHubData>;
