@@ -30,7 +30,7 @@ module.exports = (data) => {
         </div>
         <div class="sender-details">
           <img class="user-avatar logged-in-user-avatar" src="${data.senderAvatar}" alt="" />
-          <div class="user-handle logged-in-user-handle"><a href="https://github.com/${data.senderName}">${data.senderName}</a></div>
+          <div class="user-handle logged-in-user-handle">${data.senderName}</div>
         </div>
       </div>
       
