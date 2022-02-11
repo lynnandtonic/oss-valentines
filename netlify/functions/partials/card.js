@@ -33,7 +33,15 @@ module.exports = (data) => {
           <div class="user-handle logged-in-user-handle">${data.senderName}</div>
         </div>
       </div>
-      
+
+      <div class="sponsor">
+        <div>
+          <h3>Sponsor @username</h3>
+          <p>Send even more love by making a financial contribution.</p>
+        </div>
+        <a href="#" class="button blue">Sponsor now</a>
+      </div>
+
     </div>
   </main>`;
 };
