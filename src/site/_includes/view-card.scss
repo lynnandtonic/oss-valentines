@@ -68,9 +68,9 @@
 }
 
 .view-card .search-form .username-prefix {
-  display: absolute;
+  position: absolute;
   left: .5em;
-  bottom: .5em;
+  bottom: .2em;
   color: var(--color-gray-L700);
 }
 
@@ -80,9 +80,9 @@
 
 .view-card input {
   width: 100%;
-  padding: .3em .5em .3em 1em;
+  padding: .3em .5em .3em 1.6em;
   display: block;
-  border: 1px solid var(--color-gray-L800);
+  border: 1px solid var(--color-gray-L600);
   border-radius: 4px;
   font-size: 1em;
   outline: none;
