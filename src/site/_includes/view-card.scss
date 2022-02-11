@@ -42,6 +42,19 @@
   flex-shrink: 0;
 }
 
+.view-card .cta .copy-util {
+  position: relative;
+}
+
+.view-card .cta .copy-success {
+  /*display: none;*/
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: -.5em;
+  text-align: center;
+}
+
 .view-card .valentine,
 .view-card .card {
   width: 100%;
