@@ -8,4 +8,13 @@
     }
   }
 
+
+  btnHandler(".copy-url", function() {
+    navigator.clipboard.writeText(document.querySelector(".share-link").innerText).then(function() {
+      console.log(`link copied`);
+    }, function() {
+      console.log(`Couldn't copy link to clipboard`);
+    });
+  });
+
 })();
