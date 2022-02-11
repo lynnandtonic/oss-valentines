@@ -7,9 +7,6 @@ exports.data = {
 
 
 const ogURL = (path) => {
-
-  console.log(`PATH ${path}`);
-
   if (path) {
     return `https://oss.love/og/${path}`;
   } else {

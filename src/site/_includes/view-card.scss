@@ -166,16 +166,16 @@
 /* depending on the referrer via js
 /*-------------*/
 
-.view-card .cta-preview {
+.make-your-own,
+.view-card .cta-preview,
+.view-card.previewing .cta-info,
+.view-card.gifted .gh-login {
   display: none;
 }
 
-.view-card.previewing .cta-preview {
+.view-card.previewing .cta-preview,
+.view-card.gifted .make-your-own {
   display: flex;
-}
-
-.view-card.previewing .cta-info {
-  display: none;
 }
 
 .card {
