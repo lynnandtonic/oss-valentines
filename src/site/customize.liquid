@@ -41,7 +41,10 @@ scripts: ["init.js","customize.js"]
       <input type="text" name="search" id="search-recipient">
     </div>
     <div class="button-group">
-      <a href="#" class="button add-recipient">Add recipient</a>
+      <div class="recipient-util">
+        <small class="recipient-success"></small>
+        <a href="#" class="button add-recipient">Add recipient</a>
+      </div>
       <form action="/create" method="post" name="new-valentine">
         <input type="hidden" id="senderName" name="senderName" value="lynnandtonic" />
         <input type="hidden" id="senderAvatar" name="senderAvatar" value="this it their avatar" />
