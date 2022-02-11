@@ -135,10 +135,13 @@ function toggleCardUI() {
 
   if (localUser) {
     displayTemplate("#cta", "#logged-in");
-    // displayTemplate("#auth-cta", "#header-logged-in");
+    const handle = document.querySelector(".logged-in-user-handle");
+    const avatar = document.querySelector(".logged-in-user-avatar");
+    handle.innerHTML = `@${localUser.login}`;
+    avatar.src = `${localUser.avatar_url}`;
+
   } else {
     displayTemplate("#cta", "#logged-out");
-    // displayTemplate("#auth-cta", "#header-logged-out");
   }
 }
 

@@ -26,7 +26,13 @@ scripts: ["init.js"]
           <input type="submit" class="button" value="Ship it!" />
         </form>
       </section> {% endcomment %}
-      <img src="/img/valentines/{{card.image}}.svg"  alt="{{card.title}}" class="valentine" />
+      <div class="card">
+        <img src="/img/valentines/{{card.image}}.svg"  alt="{{card.title}}" class="valentine" />
+        <div class="sender-details">
+          <img class="logged-in-user-avatar" src="" alt="" />
+          <div class="logged-in-user-handle"></div>
+        </div>
+      </div>
     </div>
   </main>
 
