@@ -94,8 +94,22 @@ async function findGitHubRecipient() {
     res.json(),
   );
 
-  //TODO: handle search misses
-  setRecipientUser(userData);
+
+  const confirm = document.querySelector(".recipient-success");
+  const searchBox = document.querySelector("#search-recipient");
+  // Found one!
+  if (userData.name) {
+    setRecipientUser(userData);
+    confirm.innerHTML = `Success!`;
+    searchBox.classList.remove("error");
+  }
+  // No dice!
+  else {
+    confirm.innerHTML = `Try again!`;
+    searchBox.classList.add("error");
+    searchBox.focus();
+  }
+
 }
 
 
@@ -108,8 +122,10 @@ function setRecipientUser(data) {
 
   //update form values
   const recipientName = document.querySelector("#recipientName");
+  const recipientFullName = document.querySelector("#recipientFullName");
   const recipientAvatar = document.querySelector("#recipientAvatar");
   recipientName.value = data.login;
+  recipientFullName.value = data.name;
   recipientAvatar.value = data.avatarUrl;
 
   document.querySelector("#ship-it").removeAttribute("disabled");

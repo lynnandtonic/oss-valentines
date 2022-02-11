@@ -15,9 +15,6 @@ scripts: ["init.js","customize.js"]
     <div class="content">
       <section class="cta" id="customize-cta">
       </section>
-      {% comment %} <section class="cta">
-        <p>If everything looks correct, let’s get this valentine on its way.</p>
-      </section> {% endcomment %}
       <div class="card">
         <img src="/img/valentines/{{card.image}}.svg"  alt="{{card.title}}" class="valentine" />
         <div class="recipient-details">
@@ -46,10 +43,11 @@ scripts: ["init.js","customize.js"]
         <a href="#" class="button add-recipient">Add recipient</a>
       </div>
       <form action="/create" method="post" name="new-valentine">
-        <input type="hidden" id="senderName" name="senderName" value="lynnandtonic" />
-        <input type="hidden" id="senderAvatar" name="senderAvatar" value="this it their avatar" />
-        <input type="hidden" id="recipientName" name="recipientName" value="eleventy" />
-        <input type="hidden" id="recipientAvatar" name="recipientAvatar" value="this it their avatar" />
+        <input type="hidden" id="senderName" name="senderName" value="" />
+        <input type="hidden" id="senderAvatar" name="senderAvatar" value="" />
+        <input type="hidden" id="recipientName" name="recipientName" value="" />
+        <input type="hidden" id="recipientFullName" name="recipientFullName" value="" />
+        <input type="hidden" id="recipientAvatar" name="recipientAvatar" value="" />
         <input type="hidden" hidden id="cardVariant" name="cardVariant"  value="{{card.image}}.svg" />
         <input type="submit" class="button" id="ship-it" disabled value="Ship it!" />
        </form>
