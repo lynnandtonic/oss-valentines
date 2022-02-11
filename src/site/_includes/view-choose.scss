@@ -9,7 +9,7 @@
 	align-items: end;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 400px) {
 	.view-choose main .content {
 		grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
 	}
