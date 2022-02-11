@@ -52,7 +52,7 @@ exports.verifySignature = (input) => {
 
 const operationsDoc = `
 
-query FetchGitHubUserData($gitHubOAuthToken: String!, $login: String!) @netlify(id: """5d6aa26f-076c-48f8-89e4-bb4e7ff9a78e""", doc: """FetchGithubUserData""") {
+query GitHubData($gitHubOAuthToken: String!, $login: String!) @netlify(id: """5d6aa26f-076c-48f8-89e4-bb4e7ff9a78e""", doc: """Fetch the user data from GitHub""") {
   gitHub(auths: {gitHubOAuthToken: $gitHubOAuthToken}) {
     user(login: $login) {
       login
@@ -63,8 +63,7 @@ query FetchGitHubUserData($gitHubOAuthToken: String!, $login: String!) @netlify(
       isSponsoringViewer
     }
   }
-}
-`
+}`
 
 const httpFetch = (siteId, options) => {
       const reqBody = options.body || null
@@ -122,12 +121,12 @@ const httpFetch = (siteId, options) => {
 
 
 const fetchNetlifyGraph = async function fetchNetlifyGraph(input) {
-  const accessToken = input.options.accessToken
   const query = input.query
   const operationName = input.operationName
   const variables = input.variables
-  const options = input.options || {}
 
+  const options = input.options || {}
+  const accessToken = options.accessToken
   const siteId = options.siteId || process.env.SITE_ID
 
   const payload = {
@@ -151,9 +150,9 @@ const fetchNetlifyGraph = async function fetchNetlifyGraph(input) {
 }
 
 
-exports.verifyRequestSignature = (request) => {
+exports.verifyRequestSignature = (request, options) => {
   const event = request.event
-  const secret = process.env.NETLIFY_GRAPH_WEBHOOK_SECRET
+  const secret = options.webhookSecret || process.env.NETLIFY_GRAPH_WEBHOOK_SECRET
   const signature = event.headers['x-netlify-graph-signature']
   const body = event.body
 
@@ -167,13 +166,13 @@ exports.verifyRequestSignature = (request) => {
   return verifySignature({ secret, signature, body: body || '' })
 }
 
-exports.fetchFetchGitHubUserData = (
+exports.fetchGitHubData = (
       variables,
       options
     ) => {
       return fetchNetlifyGraph({
         query: operationsDoc,
-        operationName: "FetchGitHubUserData",
+        operationName: "GitHubData",
         variables: variables,
         options: options || {},
       });
@@ -185,9 +184,9 @@ exports.fetchFetchGitHubUserData = (
  */
 const functions = {
   /**
-  * FetchGithubUserData
+  * Fetch the user data from GitHub
   */
-  fetchFetchGitHubUserData: exports.fetchFetchGitHubUserData
+  fetchGitHubData: exports.fetchGitHubData
 }
 
 exports.default = functions

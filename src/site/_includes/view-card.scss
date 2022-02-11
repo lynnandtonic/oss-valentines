@@ -35,7 +35,8 @@
   flex-shrink: 0;
 }
 
-.view-card .valentine {
+.view-card .valentine,
+.view-card .card {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
@@ -65,6 +66,7 @@
   box-shadow: 0 0 1px 4px var(--color-focus-ring);
 }
 
+
 /* Share view,
 /* Recipient view
 /*-------------*/
@@ -76,7 +78,7 @@
   flex-wrap: wrap;
 }
 
-.view-card.view-share .cta > div {
+.view-card.view-share .cta>div {
   background-color: white;
 }
 
@@ -112,4 +114,39 @@
 
 .view-card.previewing .cta-info {
   display: none;
+}
+
+.card {
+  position: relative;
+}
+
+// TODO: Calculate font size to fit the card size
+.card .recipient-user-handle {
+  position: absolute;
+  bottom: 10%;
+  left: 13%;
+  font-size: 1.2em;
+}
+
+.card .recipient-user-avatar {
+  position: absolute;
+  bottom: 8%;
+  left: 6%;
+  border-radius: 50%;
+  width: 6%;
+}
+
+.card .logged-in-user-handle {
+  position: absolute;
+  bottom: 10%;
+  left: 65%;
+  font-size: 1.2em;
+}
+
+.card .logged-in-user-avatar {
+  position: absolute;
+  bottom: 8%;
+  left: 58%;
+  border-radius: 50%;
+  width: 6%;
 }

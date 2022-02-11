@@ -2,6 +2,7 @@
 layout: layouts/base.11ty.js
 pageClass: view-choose
 bannerTitle: Choose a card
+scripts: ["init.js"]
 ---
 
 
@@ -26,7 +27,6 @@ bannerTitle: Choose a card
       </p>
     </section>
 
-    <!-- Find them all in _data/cards.json for convenience -->
     {% for card in cards %}
     <a class="valentine" href="/customize/{{card.image}}/">
       <img src="/img/valentines/{{ card.image }}.svg" alt="{{ card.title }}" />
@@ -38,6 +38,8 @@ bannerTitle: Choose a card
       <p>Send ‘em the old fashioned way.</p>
       <a href="/img/valentines/open-source-open-hearts.zip" class="button blue">Download valentines</a>
     </div>
+
+
 
   </div>
 </main>

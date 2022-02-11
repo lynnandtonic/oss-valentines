@@ -1,4 +1,5 @@
-function showShareCTA() {
+(async function() {
+
   if (document.referrer) {
     const referrer = new URL(document.referrer);
     if (referrer.pathname = "/customize/") {
@@ -6,6 +7,5 @@ function showShareCTA() {
       body.classList.add("previewing")
     }
   }
-};
 
-showShareCTA();
+})();

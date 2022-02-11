@@ -1,3 +1,12 @@
+"""An internal directive used by Netlify Graph"""
+directive @netlify(
+  """The docstring for this operation"""
+  doc: String
+
+  """The uuid of the operation (normally auto-generated)"""
+  id: String!
+) on QUERY | MUTATION | SUBSCRIPTION | FRAGMENT_DEFINITION
+
 input GitHubStatusEventSubscriptionInput {
   """The owner of the repo, the `octocat` in `octocat/Hello-World`."""
   repoOwner: String!
@@ -12220,6 +12229,15 @@ type OneGraphShortenedQuery {
 }
 
 input OneGraphServiceInfoFilter {
+  """Check for any expression in this list"""
+  or: [OneGraphServiceInfoFilter!]
+
+  """Filter for services that support Netlify Graph"""
+  supportsNetlifyGraph: Boolean
+
+  """Filter for services that support Netlify Api Authentication"""
+  supportsNetlifyApiAuthentication: Boolean
+
   """Filter for services that support custom service auth"""
   supportsCustomServiceAuth: Boolean
 
@@ -36376,6 +36394,12 @@ type OneGraphServiceInfo implements OneGraphNode {
 
   """A short-lived svg image url of the logo for the service. May be null."""
   logoUrl(style: OneGraphAppLogoStyleEnum = DEFAULT): String
+
+  """Whether Netlify API Authentication is enabled for this service"""
+  netlifyApiAuthenticationEnabled: Boolean!
+
+  """Whether Netlify Graph is enabled for this service"""
+  netlifyGraphEnabled: Boolean!
   oneGraphLinkedNodes(
     """Filter the connected nodes that are returned by service or typename."""
     filter: OneGraphLinkedNodesConnectionFilter

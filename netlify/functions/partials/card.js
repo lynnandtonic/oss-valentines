@@ -12,18 +12,20 @@ module.exports = (data) => {
         <button>Copy</button>
         <button>Tweet</button>
       </section>
-      <img src="/img/valentines/${data.cardVariant}" alt="" class="valentine" />
-      <code>
-        <pre>
-          This page comes with some data...
-          ${data.senderName}
-          ${data.senderAvatar}
-          ${data.recipientName}
-          ${data.recipientAvatar}
-          ${data.cardVariant}
-          ${data.path}
-        </pre>
-      </code>
+      
+      
+      <div class="card">
+        <img src="/img/valentines/${data.cardVariant}" alt="" class="valentine" />
+        <div class="recipient-details">
+          <img class="recipient-user-avatar" src="${data.recipientAvatar}" alt="" />
+          <div class="recipient-user-handle">${data.recipientName}</div>
+        </div>
+        <div class="sender-details">
+          <img class="logged-in-user-avatar" src="${data.senderAvatar}" alt="" />
+          <div class="logged-in-user-handle">${data.senderName}</div>
+        </div>
+      </div>
+      
     </div>
   </main>`;
 };
