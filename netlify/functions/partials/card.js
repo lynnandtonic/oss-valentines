@@ -6,7 +6,7 @@ module.exports = (data) => {
   <main class="container">
     <div class="content">
       <section class="cta cta-info">
-      <p class="center"><span>${data.senderName}</span> sent you an OSS valentine to say “Thank you!”</p>
+        <p class="center"><span>${data.senderName}</span> sent you an OSS valentine to say “Thank you!”</p>
       </section>
       <section class="cta cta-preview">
         <p class="center">Send this URL to your OSS valentine.</p>

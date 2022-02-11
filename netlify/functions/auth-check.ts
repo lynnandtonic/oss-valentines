@@ -22,7 +22,6 @@ export const handler: Handler = async (event) => {
       body: JSON.stringify({ isLoggedIn: false, user: {} }),
     };
   }
-  console.log('hello?');
   const auth = JSON.parse(cookies['nf-gh-session']);
   let isLoggedIn = false;
   let user: User = {};
