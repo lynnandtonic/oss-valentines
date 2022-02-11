@@ -14,7 +14,7 @@ module.exports = (data) => {
         <a href="/card/${data.path}" class="share-link">https://oss.love/card/${data.path}</a>
         <div class="button-group">
           <div class="copy-util">
-            <small class="copy-success">Copied!</small>
+            <small class="copy-success"></small>
             <button class="copy-url">Copy</button>
           </div>
           <a class="button tweet-link" href="https://twitter.com/intent/tweet?text=I can't keep my feelings a secret... I just have to share this valentine for @${data.recipientName} with the world!&url=https://oss.love/card/${data.path}">Tweet</a>

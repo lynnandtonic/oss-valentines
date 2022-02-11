@@ -10,12 +10,13 @@
 
 
   btnHandler(".copy-url", function() {
+    const copyFeedback = document.querySelector(".copy-success");
     navigator.clipboard.writeText(document.querySelector(".share-link").innerText).then(function() {
       console.log(`link copied`);
-      const success = document.querySelector(".copy-success");
-      success.style.display = 'block';
+      copyFeedback.innerHTML = 'Copied!';
     }, function() {
       console.log(`Couldn't copy link to clipboard`);
+      copyFeedback.innerHTML = 'Try again!';
     });
   });
 
