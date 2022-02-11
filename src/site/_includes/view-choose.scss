@@ -2,12 +2,17 @@
 	display: flex;
 }
 
-.view-choose .content {
+.view-choose main .content {
 	min-height: 400px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
 	gap: 1.5em;
 	align-items: end;
+}
+
+@media screen and (min-width: 350px) {
+	.view-choose main .content {
+		grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+	}
 }
 
 .view-choose .intro {
