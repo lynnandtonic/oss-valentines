@@ -16,6 +16,13 @@ export const handler = async (event) => {
 
   if (GitHubDataErrors) {
     console.error(JSON.stringify(GitHubDataErrors, null, 2));
+    return {
+      statusCode: 500,
+      body: JSON.stringify(GitHubDataErrors),
+      headers: {
+        'content-type': 'application/json',
+      },
+    };
   }
 
   const user = GitHubDataData.gitHub.user;
