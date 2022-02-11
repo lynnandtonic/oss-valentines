@@ -12,6 +12,8 @@
   btnHandler(".copy-url", function() {
     navigator.clipboard.writeText(document.querySelector(".share-link").innerText).then(function() {
       console.log(`link copied`);
+      const success = document.querySelector(".copy-success");
+      success.style.display = 'block';
     }, function() {
       console.log(`Couldn't copy link to clipboard`);
     });
