@@ -2,7 +2,6 @@
 // generate an image for it with cloudinary
 
 const { createClient } = require('@supabase/supabase-js');
-const utf8 = require('utf8');
 const fetch = require('node-fetch');
 
 const {
@@ -11,10 +10,16 @@ const {
 } = process.env;
 
 
+const encodeURL = (url) => {
+  let b64 = Buffer.from(url.split("?")[0]).toString('base64');
+  return b64;
+}
+
+
 const handler = async(event) => {
 
   // get the card ID from the request
-  const cardPath = event.path.split("card/")[1];
+  const cardPath = event.path.split("og/")[1];
 
   // Connect to database and fetch data
   const supabase = createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY);
@@ -27,22 +32,22 @@ const handler = async(event) => {
   // No custom card on this URL? 
   // Display a generic OG image
   if (!data.length) {
-    console.log(`no card found`);
+    console.log(`no card found on ${cardPath}`);
     return;
   }
 
   let cardData = data[0];
-  // const salutationText = encodeURI(`${badgeData.DisplayName.split(" ")[0]} will be lookin’ hella fly at Jamstack Conf this year!`);
-
 
 
   // Fetch a generated image from Cloudinary
-  const bgImageUrl = "v1629746298/lanyardify/og-badge-blue.png";
-  // const nameLabel = `c_fit,bo_8px_solid_black,l_text:Roboto_42_bold_stroke:${encodeURI(formattedName)},co_rgb:FFFFFF,g_north_west,y_460,x_65,w_560`;
-  // const salutation = `c_fit,bo_8px_solid_black,l_text:Roboto_38_bold_center_stroke:${salutationText},co_rgb:FFFFFF,g_north_west,y_260,x_690,w_470`;
-  // const thenImage = `l_lanyardify:${path}-then,g_north_west,w_168,x_65,y_180`;
-  // const nowImage = `l_lanyardify:${path}-now,g_north_west,w_229,x_319,y_65`;
-  const ogUrl = `https://res.cloudinary.com/netlify/image/upload/${senderName}/${senderAvatar}/${recipeintName}/${recipient}/${bgImageUrl}`;
+  const bgImageUrl = `oss-love/${cardData.cardVariant.replace(".svg",".png")}`;
+  const senderName = `c_fit,l_text:Roboto_32:@${encodeURI(cardData.senderName)},g_south_west,w_340,x_780,y_65`;
+  const senderAvatar = `l_fetch:${encodeURL(cardData.senderAvatar)},r_max,w_70,g_south_west,x_700,y_48`;
+  const recipientName = `c_fit,l_text:Roboto_32:@${encodeURI(cardData.recipientName)},g_south_west,w_340,x_155,y_65`;
+  const recipientAvatar = `l_fetch:${encodeURL(cardData.recipientAvatar)},r_max,w_70,g_south_west,x_75,y_48`;
+
+  const ogUrl = `https://res.cloudinary.com/netlify/image/upload/${senderName}/${senderAvatar}/${recipientName}/${recipientAvatar}/${bgImageUrl}`;
+  console.log(ogUrl);
 
   let image;
   try {

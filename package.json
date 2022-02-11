@@ -25,6 +25,7 @@
     "@octokit/oauth-app": "^3.6.0",
     "@octokit/oauth-methods": "^1.2.6",
     "@supabase/supabase-js": "^1.30.0",
+    "node-fetch": "^2.6.7",
     "sass": "^1.49.7",
     "shortid": "^2.2.16"
   }
