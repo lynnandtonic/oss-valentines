@@ -13,7 +13,7 @@ const ogURL = (path) => {
   if (path) {
     return `https://oss.love/og/${path}`;
   } else {
-    return `https://oss.love/img/oss-og.png!!!`
+    return `https://oss.love/img/oss-og.png`
   }
 };
 
