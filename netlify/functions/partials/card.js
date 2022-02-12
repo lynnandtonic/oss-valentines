@@ -31,7 +31,7 @@ module.exports = (data) => {
       <section class="cta cta-preview">
         <p class="center">Send this URL to your OSS valentine.</p>
         <!-- NOTE: Clicking this should probably copy the URL to your clipboard and not link to the page? -->
-        <a href="/card/${data.path}" class="share-link">https://oss.love/card/${data.path}</a>
+        <p>https://oss.love/card/${data.path}</p>
         <div class="button-group">
           <div class="copy-util">
             <small class="copy-success"></small>
