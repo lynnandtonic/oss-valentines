@@ -4,6 +4,7 @@
 
 .view-choose main .content {
 	min-height: 400px;
+	padding: var(--grid-gutter) 0
 	display: grid;
 	gap: 1.5em;
 	align-items: end;

@@ -67,16 +67,5 @@ main {
 
 .container > .content {
 	grid-column: main;
-}
-
-@media screen and (max-width: 800px) {
-	.container > .content {
-		padding: var(--grid-gutter) 0;
-	}
-}
-
-@media screen and (min-width: 801px) {
-	.container > .content {
-		padding: 4em 0;
-	}
+	padding: 4em 0;
 }
