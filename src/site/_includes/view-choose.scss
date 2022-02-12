@@ -9,6 +9,12 @@
 	align-items: end;
 }
 
+@media screen and (max-width: 800px) {
+	.view-choose main .content {
+		padding: var(--grid-gutter) 0;
+	}
+}
+
 @media screen and (min-width: 400px) {
 	.view-choose main .content {
 		grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
