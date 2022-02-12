@@ -166,7 +166,8 @@
     .view-card .cta-preview,
     .view-card.previewing .cta-info,
     .view-card.gifted .gh-login,
-    .view-card.previewing .sponsor-cta-viewer {
+    .view-card.previewing .sponsor-cta-viewer,
+    .view-card.gifted .sponsor-cta {
       display: none;
     }
     
@@ -176,8 +177,7 @@
     }
     
     .view-card.gifted .sponsor-cta-viewer,
-    .view-card.previewing .sponsor-cta,
-    .view-card.gifted .sponsor-cta {
+    .view-card.previewing .sponsor-cta {
       display: block;
     }
     
@@ -232,7 +232,8 @@
       margin-top: 0;
     }
 
-    p.sponsor-cta-viewer {
+    p.sponsor-cta-eyebrow {
+      align-self: stretch;
       margin: -1em;
       margin-bottom: 0;
       padding: .5em 1em;
@@ -240,6 +241,10 @@
       flex-grow: 1;
       font-size: 95%;
       background-color: var(--color-red-R400);
+    }
+
+    small.sponsor-cta-viewer {
+      margin-top: 1em;
     }
     
     @media screen and (max-width: 600px) {
