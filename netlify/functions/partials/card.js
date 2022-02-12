@@ -48,11 +48,11 @@ module.exports = (data) => {
         <img src="/img/valentines/${data.cardVariant}" alt="" class="valentine" />
         <div class="recipient-details">
           <img class="user-avatar recipient-user-avatar" src="${data.recipientAvatar}" alt="" />
-          <a href="https://github.com/${data.recipientName}" class="user-handle recipient-user-handle" target="_blank">${data.recipientName}</a>
+          <a href="https://github.com/${data.recipientName}?metadata_campaign=sendosslove2022" class="user-handle recipient-user-handle" target="_blank">${data.recipientName}</a>
         </div>
         <div class="sender-details">
           <img class="user-avatar logged-in-user-avatar" src="${data.senderAvatar}" alt="" />
-          <a href="https://github.com/${data.senderName}" class="user-handle logged-in-user-handle" target="_blank">${data.senderName}</a>
+          <a href="https://github.com/${data.senderName}?metadata_campaign=sendosslove2022" class="user-handle logged-in-user-handle" target="_blank">${data.senderName}</a>
         </div>
       </div>
 
