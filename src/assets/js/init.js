@@ -124,9 +124,11 @@ function setRecipientUser(data) {
   const recipientName = document.querySelector("#recipientName");
   const recipientFullName = document.querySelector("#recipientFullName");
   const recipientAvatar = document.querySelector("#recipientAvatar");
+  const recipientCanBeSponsored = document.querySelector("#recipientCanBeSponsored");
   recipientName.value = data.login;
   recipientFullName.value = data.name;
   recipientAvatar.value = data.avatarUrl;
+  recipientCanBeSponsored.value = data.viewerCanSponsor;
 
   document.querySelector("#ship-it").removeAttribute("disabled");
 }

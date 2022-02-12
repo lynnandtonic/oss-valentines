@@ -1,10 +1,8 @@
-
-   
 import NetlifyGraph from './netlifyGraph';
 import { parse } from 'cookie';
 
 export const handler = async (event) => {
-  const [, , , username = 'jlengstorf'] = event.path.split('/');
+  const [, , , username = 'philhawksworth'] = event.path.split('/');
   const cookies = parse(event.headers.cookie);
   const auth = JSON.parse(cookies['nf-gh-session']);
 

@@ -42,13 +42,15 @@ scripts: ["init.js","customize.js"]
         <small class="recipient-success"></small>
         <a href="#" class="button add-recipient">Add recipient</a>
       </div>
-      <form action="/create" method="post" name="new-valentine">
+      <form action="/create" method="post" name="new-valentine" id="newValentine">
         <input type="hidden" id="senderName" name="senderName" value="" />
         <input type="hidden" id="senderAvatar" name="senderAvatar" value="" />
         <input type="hidden" id="recipientName" name="recipientName" value="" />
         <input type="hidden" id="recipientFullName" name="recipientFullName" value="" />
         <input type="hidden" id="recipientAvatar" name="recipientAvatar" value="" />
-        <input type="hidden" hidden id="cardVariant" name="cardVariant"  value="{{card.image}}.svg" />
+        <input type="hidden" id="sponsorable" name="sponsorable" value="" />
+        <input type="hidden" id="cardVariant" name="cardVariant"  value="{{card.image}}.svg" />
+        <input type="hidden" id="recipientCanBeSponsored" name="recipientCanBeSponsored" value="">
         <input type="submit" class="button" id="ship-it" disabled value="Ship it!" />
        </form>
      </div>

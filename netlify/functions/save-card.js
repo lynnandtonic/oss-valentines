@@ -18,6 +18,7 @@ exports.handler = async(event, context) => {
   const uniquePath = shortid.generate();
   data.cardPath = uniquePath;
 
+
   // Connect to database and save our data
   const supabase = createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY);
   const { savedData, error } = await supabase
@@ -29,11 +30,12 @@ exports.handler = async(event, context) => {
       senderAvatar: data.senderAvatar,
       recipientName: data.recipientName,
       recipientAvatar: data.recipientAvatar,
+      recipientCanBeSponsored: data.recipientCanBeSponsored,
     });
 
   if (error) {
     // TODO: make a better error experience
-    console.log("Error saving badge data:", error);
+    console.log("Error saving card data:", error);
     return {
       statusCode: 400,
       body: JSON.stringify(error)

@@ -6,6 +6,7 @@ export const handler: Handler = async () => {
     clientType: 'oauth-app',
     clientId: process.env.GITHUB_APP_CLIENT_ID,
     scopes: ['read:user'],
+    // redirectUrl: "https://oss-valentine-e28c66.netlify.live/customize/div-without-you/"
   });
 
   return {

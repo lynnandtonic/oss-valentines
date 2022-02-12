@@ -1,12 +1,32 @@
 module.exports = (data) => {
 
 
+  const sponsorCTA = (data) => {
+
+
+    console.log(data);
+
+    if (data.recipientCanBeSponsored) {
+      return `<div class="sponsor">
+      <div>
+        <h3>Sponsor @${data.recipientName}</h3>
+        <p class="sponsor-cta">Send even more love by making a financial contribution.</p>
+        <p class="sponsor-cta-viewer">Psst, are you also an admirer of @${data.recipientName}? Why not send them <a href="/">your own valentine</a>, or show them some love by making a financial contribution?</p>
+      </div>
+      <a href="https://github.com/sponsors/${data.recipientName}" class="button blue">Sponsor now</a>
+    </div>`
+    } else {
+      return "";
+    }
+  };
+
+
 
   return `
   <main class="container">
     <div class="content">
       <section class="cta cta-info">
-        <p class="center"><span>${data.senderName}</span> sent you an OSS valentine to say “Thank you!”</p>
+        <p class="center"><span>@${data.senderName}</span> sent you an OSS valentine to say “Thank you!”</p>
       </section>
       <section class="cta cta-preview">
         <p class="center">Send this URL to your OSS valentine.</p>
@@ -34,13 +54,7 @@ module.exports = (data) => {
         </div>
       </div>
 
-      <div class="sponsor">
-        <div>
-          <h3>Sponsor @username</h3>
-          <p>Send even more love by making a financial contribution.</p>
-        </div>
-        <a href="#" class="button blue">Sponsor now</a>
-      </div>
+      ${sponsorCTA(data)}
 
     </div>
   </main>`;
