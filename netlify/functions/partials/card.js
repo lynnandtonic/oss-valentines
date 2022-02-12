@@ -8,10 +8,12 @@ module.exports = (data) => {
 
     if (data.recipientCanBeSponsored) {
       return `<div class="sponsor">
-      <p class="sponsor-cta-viewer">Psst! Are you also an admirer of <strong>@${data.recipientName}?</strong><br/> Why not send them <a href="/">your own valentine</a> or sponsor them on GitHub?</p>
+      <p class="sponsor-cta-eyebrow sponsor-cta-viewer">Psst! Are you also an admirer of <strong>@${data.recipientName}?</strong></p>
       <div>
         <h3>Sponsor @${data.recipientName}</h3>
         <p class="sponsor-cta">Send even more love by making a financial contribution.</p>
+        <p class="sponsor-cta-viewer">Send them some love by making a financial contribution.</p>
+        <small class="sponsor-cta-viewer"">Or send them <a href="/">your own valentine</a>.</small>
       </div>
       <a href="https://github.com/sponsors/${data.recipientName}" class="button blue">Sponsor now</a>
     </div>`
