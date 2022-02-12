@@ -15,7 +15,7 @@ module.exports = (data) => {
         <p class="sponsor-cta-viewer">Send them some love by making a financial contribution.</p>
         <small class="sponsor-cta-viewer"">Or send them <a href="/">your own valentine</a>.</small>
       </div>
-      <a href="https://github.com/sponsors/${data.recipientName}" class="button blue">Sponsor now</a>
+      <a href="https://github.com/sponsors/${data.recipientName}?metadata_campaign=netlifysendosslove2022" class="button blue">Sponsor now</a>
     </div>`
     } else {
       return "";

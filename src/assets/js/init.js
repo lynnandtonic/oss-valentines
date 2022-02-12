@@ -69,7 +69,8 @@ function toggleCardUI() {
     // update sender display deets
     const handle = document.querySelector(".logged-in-user-handle");
     const avatar = document.querySelector(".logged-in-user-avatar");
-    handle.innerHTML = `@${localUser.login}`;
+    handle.innerText = `@${localUser.login}`;
+    handle.href = `https://github.com/${localUser.login}?metadata_campaign=netlifysendosslove2022`;
     avatar.src = `${localUser.avatar_url}`;
     btnHandler(".add-recipient", findGitHubRecipient);
 
@@ -94,7 +95,6 @@ async function findGitHubRecipient() {
     res.json(),
   );
 
-
   const confirm = document.querySelector(".recipient-success");
   const searchBox = document.querySelector("#search-recipient");
   // Found one!
@@ -117,7 +117,8 @@ async function findGitHubRecipient() {
 function setRecipientUser(data) {
   const handle = document.querySelector(".recipient-user-handle");
   const avatar = document.querySelector(".recipient-user-avatar");
-  handle.innerHTML = `@${data.login}`;
+  handle.innerText = `@${data.login}`;
+  handle.href = `https://github.com/${data.login}?metadata_campaign=netlifysendosslove2022`;
   avatar.src = `${data.avatarUrl}`;
 
   //update form values
