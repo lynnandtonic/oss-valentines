@@ -2,6 +2,7 @@ const { createClient } = require('@supabase/supabase-js');
 const { builder } = require('@netlify/functions');
 const { render } = require('../../src/site/_includes/layouts/base.11ty.js');
 const card = require('./partials/card.js');
+const notFound = require('./partials/404.js');
 
 // Environment variables managed as part of teh Netlify site.
 // To access these automatically during local development you 
@@ -25,20 +26,10 @@ const handler = async(event) => {
     .eq('path', cardPath)
 
 
-  console.log(data);
+  console.log(data, error);
 
-  if (error) {
-    // not found or an error, send to the generic error page
-    console.log('Error:', error);
-    return {
-      body: JSON.stringify(error),
-      statusCode: 301,
-      headers: {
-        Location: `/`,
-      }
-    };
+  if (data[0]) {
 
-  } else {
     // if found return a view
     console.log(`Render and persist page: ${cardPath}`);
 
@@ -57,8 +48,30 @@ const handler = async(event) => {
       },
       body: render(pageData)
     }
-  }
 
+
+  } else {
+    // not found or an error, send to the generic error page
+    console.log('Error:', error);
+
+    let pageData = {
+      content: notFound(),
+      pageClass: "view-card",
+      bannerTitle: "ummmm...",
+      scripts: ["init.js"]
+    }
+
+
+
+    return {
+      statusCode: 200,
+      headers: {
+        "Content-Type": "text/html",
+      },
+      // body: JSON.stringify(error)
+      body: render(pageData)
+    };
+  }
 
 }
 
