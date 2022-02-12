@@ -166,8 +166,7 @@
     .view-card .cta-preview,
     .view-card.previewing .cta-info,
     .view-card.gifted .gh-login,
-    .view-card.previewing .sponsor-cta-viewer,
-    .view-card.gifted .sponsor-cta {
+    .view-card.previewing .sponsor-cta-viewer {
       display: none;
     }
     
@@ -177,7 +176,8 @@
     }
     
     .view-card.gifted .sponsor-cta-viewer,
-    .view-card.previewing .sponsor-cta {
+    .view-card.previewing .sponsor-cta,
+    .view-card.gifted .sponsor-cta {
       display: block;
     }
     
@@ -232,7 +232,7 @@
       margin-top: 0;
     }
 
-    .sponsor-cta-viewer {
+    p.sponsor-cta-viewer {
       margin: -1em;
       margin-bottom: 0;
       padding: .5em 1em;
