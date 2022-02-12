@@ -23,12 +23,15 @@ export const handler: Handler = async (event) => {
   });
 
   const cookies = parse(event.headers?.cookie);
-  const returnUrl = JSON.parse(cookies["nf-authed-path"]).route;
+  let returnUrl = '/';
+  if(cookies["nf-authed-path"]) {
+    returnUrl = JSON.parse(cookies["nf-authed-path"]).route;
+  }
   return {
     statusCode: 301,
     headers: {
       'Set-Cookie': tokenCookie,
-      Location: returnUrl || `/'`,
+      Location: returnUrl
     },
     body: 'redirecting...',
   };
