@@ -166,8 +166,7 @@
     .view-card .cta-preview,
     .view-card.previewing .cta-info,
     .view-card.gifted .gh-login,
-    .view-card.previewing .sponsor-cta-viewer,
-    .view-card.gifted .sponsor-cta {
+    .view-card.previewing .sponsor-cta-viewer {
       display: none;
     }
     
@@ -177,7 +176,8 @@
     }
     
     .view-card.gifted .sponsor-cta-viewer,
-    .view-card.previewing .sponsor-cta {
+    .view-card.previewing .sponsor-cta,
+    .view-card.gifted .sponsor-cta {
       display: block;
     }
     
