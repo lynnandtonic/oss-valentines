@@ -32,10 +32,8 @@ exports.render = function(data) {
   <meta content="@Netlify" name="twitter:creator">
   <meta content="Open source, Open hearts" name="twitter:title" property="og:title">
   <meta content="To show our love for the OSS community, join us in sending a valentine—a token of appreciation—to your favorite open source developers and projects." name="twitter:description" property="og:description">
-  <!-- TODO: double check final URL -->
   <meta content="https://oss.love" property="og:url">
   <meta content="https://oss.love" property="twitter:url">
-  <!-- TODO: recipient view needs custom OG -->
   <meta content="${ogURL(data.ogPath)}" property="og:image">
   <meta content="${ogURL(data.ogPath)}" name="twitter:image">
   <link rel="stylesheet" href="/styles.css">  
@@ -78,7 +76,6 @@ exports.render = function(data) {
       </a>
     </div>
   </footer>
-
 
   <script src="/js/focus-visible.min.js"></script>
   ${data.scripts.map(s => '<script src="/js/'+s+'"></script>').join("")}

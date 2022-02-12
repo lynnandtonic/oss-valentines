@@ -8,10 +8,10 @@ module.exports = (data) => {
 
     if (data.recipientCanBeSponsored) {
       return `<div class="sponsor">
+      <p class="sponsor-cta-viewer">Psst! Are you also an admirer of <strong>@${data.recipientName}?</strong><br/> Why not send them <a href="/">your own valentine</a> or sponsor them on GitHub?</p>
       <div>
         <h3>Sponsor @${data.recipientName}</h3>
         <p class="sponsor-cta">Send even more love by making a financial contribution.</p>
-        <p class="sponsor-cta-viewer">Psst, are you also an admirer of @${data.recipientName}? Why not send them <a href="/">your own valentine</a>, or show them some love by making a financial contribution?</p>
       </div>
       <a href="https://github.com/sponsors/${data.recipientName}" class="button blue">Sponsor now</a>
     </div>`
@@ -30,8 +30,8 @@ module.exports = (data) => {
       </section>
       <section class="cta cta-preview">
         <p class="center">Send this URL to your OSS valentine.</p>
-        <!-- NOTE: Clicking this should probably copy the URL to your clipboard and not link to the page? -->
-        <a href="/card/${data.path}" class="share-link">https://oss.love/card/${data.path}</a>
+        <!-- NOTE: I removed the URL link because it was behaving unexpectedly -->
+        <p>https://oss.love/card/${data.path}</p>
         <div class="button-group">
           <div class="copy-util">
             <small class="copy-success"></small>
