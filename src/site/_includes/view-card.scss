@@ -234,29 +234,34 @@
       align-items: flex-start;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 1em;
+      gap: .8em;
       border: 1px solid var(--color-red-R400);
     }
     
     .sponsor p {
       margin-top: 0;
     }
-
     .sponsor .button {
-      margin-top: .3em;
+      margin-top: .2em;
     }
 
     small.sponsor-cta-eyebrow {
       align-self: stretch;
       margin: calc(-1em - 1px);
       margin-bottom: 0;
-      padding: .5em 1em;
+      padding: .3em 1em;
       flex-basis: 100%;
       flex-grow: 1;
       font-size: 95%;
       background-color: var(--color-red-R400);
     }
-    
+
+    @media screen and (max-width: 400px) {
+      .sponsor .button {
+        margin-top: -.4em;
+      }
+    }
+
     @media screen and (max-width: 600px) {
       .sponsor {
         margin-bottom: -3em;
