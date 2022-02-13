@@ -56,7 +56,7 @@
     @media screen and (max-width: 600px) {
       .view-card .cta .copy-success,
       .view-card .cta .recipient-success {
-        left: -105%;
+        left: -110%;
         top: 20%;
         text-align: right;
       }
@@ -158,6 +158,14 @@
       text-decoration: none;
       word-break: break-word;
     }
+
+    @media screen and (max-width: 600px) {
+      .view-share .share-link {
+        width: 100%;
+      }
+    }
+
+
     /* Conditionally show the share or info CTA
 /* depending on the referrer via js
 /*-------------*/
@@ -257,9 +265,10 @@
       }
       .sponsor .button {
         align-self: flex-end;
+        font-size: 80%;
       }
       .sponsor h3 {
-        font-size: 1.3em;
+        font-size: 1.2em;
       }
       .sponsor p {
         font-size: 1em;
