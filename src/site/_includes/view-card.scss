@@ -56,7 +56,7 @@
     @media screen and (max-width: 600px) {
       .view-card .cta .copy-success,
       .view-card .cta .recipient-success {
-        left: -105%;
+        left: -110%;
         top: 20%;
         text-align: right;
       }
@@ -158,6 +158,14 @@
       text-decoration: none;
       word-break: break-word;
     }
+
+    @media screen and (max-width: 600px) {
+      .view-share .share-link {
+        width: 100%;
+      }
+    }
+
+
     /* Conditionally show the share or info CTA
 /* depending on the referrer via js
 /*-------------*/
@@ -215,45 +223,67 @@
     .card .logged-in-user-handle {
       left: 65.5%;
     }
+
     /* Sponsorship */
-    
+
     .sponsor {
       max-width: 900px;
-      margin: 3em auto 1em;
-      padding: 1em;
+      margin: 4em auto -2em;
+      padding: 1rem;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 1em;
+      gap: .8em;
       border: 1px solid var(--color-red-R400);
+    }
+
+    .view-card.previewing .sponsor {
+      margin-top: 1em;
     }
     
     .sponsor p {
       margin-top: 0;
     }
+    .sponsor .button {
+      margin-top: .2em;
+    }
 
-    p.sponsor-cta-eyebrow {
+    small.sponsor-cta-eyebrow {
       align-self: stretch;
-      margin: -1em;
+      margin: calc(-1rem - 1px);
       margin-bottom: 0;
-      padding: .5em 1em;
+      padding: .3em 1em;
       flex-basis: 100%;
       flex-grow: 1;
       font-size: 95%;
       background-color: var(--color-red-R400);
     }
 
-    small.sponsor-cta-viewer {
-      margin-top: 1em;
+    @media screen and (max-width: 400px) {
+      .sponsor .button {
+        margin-top: -.4em;
+      }
     }
-    
+
     @media screen and (max-width: 600px) {
       .sponsor {
+        margin-bottom: -3em;
         flex-direction: column;
+        gap: .6em;
       }
       .sponsor .button {
         align-self: flex-end;
+        font-size: 80%;
+      }
+      .sponsor h3 {
+        font-size: 1.2em;
+      }
+      .sponsor p {
+        font-size: 1em;
+      }
+      small.sponsor-cta-eyebrow {
+        font-size: 85%;
       }
     }
     
