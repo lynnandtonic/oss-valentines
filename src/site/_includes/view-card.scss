@@ -229,7 +229,7 @@
     .sponsor {
       max-width: 900px;
       margin: 4em auto -2em;
-      padding: 1em;
+      padding: 1rem;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
@@ -251,7 +251,7 @@
 
     small.sponsor-cta-eyebrow {
       align-self: stretch;
-      margin: calc(-1em - 1px);
+      margin: calc(-1rem - 1px);
       margin-bottom: 0;
       padding: .3em 1em;
       flex-basis: 100%;
@@ -281,6 +281,9 @@
       }
       .sponsor p {
         font-size: 1em;
+      }
+      small.sponsor-cta-eyebrow {
+        font-size: 85%;
       }
     }
     
