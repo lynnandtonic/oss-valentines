@@ -26,6 +26,9 @@ export const handler: Handler = async (event) => {
   let returnUrl = '/';
   if(cookies["nf-authed-path"]) {
     returnUrl = JSON.parse(cookies["nf-authed-path"]).route;
+    if(typeof returnUrl !== "string"){
+      returnUrl = "/";
+    }
   }
   return {
     statusCode: 301,
