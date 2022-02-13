@@ -215,11 +215,12 @@
     .card .logged-in-user-handle {
       left: 65.5%;
     }
+
     /* Sponsorship */
     
     .sponsor {
       max-width: 900px;
-      margin: 3em auto 1em;
+      margin: 4em auto -2em;
       padding: 1em;
       display: flex;
       align-items: flex-start;
@@ -233,9 +234,13 @@
       margin-top: 0;
     }
 
-    p.sponsor-cta-eyebrow {
+    .sponsor .button {
+      margin-top: .3em;
+    }
+
+    small.sponsor-cta-eyebrow {
       align-self: stretch;
-      margin: -1em;
+      margin: calc(-1em - 1px);
       margin-bottom: 0;
       padding: .5em 1em;
       flex-basis: 100%;
@@ -243,17 +248,21 @@
       font-size: 95%;
       background-color: var(--color-red-R400);
     }
-
-    small.sponsor-cta-viewer {
-      margin-top: 1em;
-    }
     
     @media screen and (max-width: 600px) {
       .sponsor {
+        margin-bottom: -3em;
         flex-direction: column;
+        gap: .6em;
       }
       .sponsor .button {
         align-self: flex-end;
+      }
+      .sponsor h3 {
+        font-size: 1.3em;
+      }
+      .sponsor p {
+        font-size: 1em;
       }
     }
     

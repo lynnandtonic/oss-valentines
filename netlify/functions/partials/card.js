@@ -8,12 +8,11 @@ module.exports = (data) => {
 
     if (data.recipientCanBeSponsored) {
       return `<div class="sponsor">
-      <p class="sponsor-cta-eyebrow sponsor-cta-viewer">Psst! Are you also an admirer of <strong>@${data.recipientName}?</strong></p>
+      <small class="sponsor-cta-eyebrow sponsor-cta-viewer">Psst! Do you also admire <strong>@${data.recipientName}?</strong></small>
       <div>
         <h3>Sponsor @${data.recipientName}</h3>
-        <p class="sponsor-cta">Send even more love by making a financial contribution.</p>
-        <p class="sponsor-cta-viewer">Send them some love by making a financial contribution.</p>
-        <small class="sponsor-cta-viewer"">Or send them <a href="/">your own valentine</a>.</small>
+        <p class="sponsor-cta">Send even more love by helping to fund their work.</p>
+        <p class="sponsor-cta-viewer">Show your support by helping to fund their work.</p>
       </div>
       <a href="https://github.com/sponsors/${data.recipientName}?metadata_campaign=netlifysendosslove2022" class="button blue">Sponsor now</a>
     </div>`
