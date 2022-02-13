@@ -13,7 +13,7 @@ export const handler: Handler = async (event) => {
     secure: true,
     httpOnly: true,
     sameSite: true,
-    maxAge: 1000 * 60 * 60 * 24 * 14, // two weeks
+    maxAge: 1000 * 60 * 60  // one hour
   });
 
   const { url } = await getWebFlowAuthorizationUrl({
@@ -21,6 +21,8 @@ export const handler: Handler = async (event) => {
     clientId: process.env.GITHUB_APP_CLIENT_ID,
     scopes: ['read:user', 'read:org'],
   });
+
+  console.log(`getWebFlowAuthorizationUrl: ${url}`)
 
   return {
     statusCode: 301,
