@@ -4,7 +4,12 @@ import { serialize } from 'cookie';
 
 export const handler: Handler = async (event) => {
 
-  const redirectCookie = serialize('nf-authed-path',  JSON.stringify({route: event.headers.referer}), {
+  let returnRoute = "/";
+  if(event.headers.referer) {
+    returnRoute = event.headers.referer;
+  };
+
+  const redirectCookie = serialize('nf-authed-path',  JSON.stringify({route: returnRoute}), {
     secure: true,
     httpOnly: true,
     sameSite: true,
