@@ -11,8 +11,9 @@ module.exports = (data) => {
       <small class="sponsor-cta-eyebrow sponsor-cta-viewer">Psst! Do you also admire <strong>@${data.recipientName}?</strong></small>
       <div>
         <h3>Sponsor @${data.recipientName}</h3>
-        <p class="sponsor-cta">Send even more love by helping to fund their work.</p>
-        <p class="sponsor-cta-viewer">Show your support by helping to fund their work.</p>
+        <!-- <p class="sponsor-cta">Send even more love by helping to fund their work.</p>
+        <p class="sponsor-cta-viewer">Show your support by helping to fund their work.</p> -->
+        <p>Show your support by helping to fund their work.</p>
       </div>
       <a href="https://github.com/sponsors/${data.recipientName}?metadata_campaign=netlifysendosslove2022" class="button blue">Sponsor now</a>
     </div>`
