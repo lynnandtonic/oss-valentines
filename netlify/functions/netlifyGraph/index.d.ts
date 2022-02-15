@@ -25,7 +25,14 @@ export type GraphQLError = {
 
 
 
-export type GitHubDataInput = {"gitHubOAuthToken": string; "login": string};
+export type GitHubDataInput = {
+ "gitHubOAuthToken": string;  
+ /**
+ * The search string to look for.
+ */
+ "login": string;  
+"login1"?: string
+};
 
 export type GitHubData = {
   /**
@@ -34,34 +41,9 @@ export type GitHubData = {
 data: {
   gitHub: {
   /**
-  * Lookup a user by login.
+  * Perform a search across resources.
   */
-user: {
-  /**
-  * The username used to login.
-  */
-login: string;
-  /**
-  * The user's public profile name.
-  */
-name: string;
-  /**
-  * A URL pointing to the user's public avatar.
-  */
-avatarUrl: string;
-  /**
-  * Whether or not the viewer is able to sponsor this user/organization.
-  */
-viewerCanSponsor: boolean;
-  /**
-  * True if the viewer is sponsoring this user/organization.
-  */
-viewerIsSponsoring: boolean;
-  /**
-  * True if the viewer is sponsored by this user/organization.
-  */
-isSponsoringViewer: boolean;
-};
+search: /** No fields, named fragments, or inline fragments found */ Record<string, unknown>;
 };
 };
   /**

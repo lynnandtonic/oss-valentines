@@ -50,20 +50,31 @@ exports.verifySignature = (input) => {
   return true
 }
 
-const operationsDoc = `
-
-query GitHubData($gitHubOAuthToken: String!, $login: String!) @netlify(id: """5d6aa26f-076c-48f8-89e4-bb4e7ff9a78e""", doc: """Fetch the user data from GitHub""") {
+const operationsDoc = `query GitHubData($gitHubOAuthToken: String!, $login: String!, $login1: String = "") @netlify(id: """5d6aa26f-076c-48f8-89e4-bb4e7ff9a78e""", doc: """Fetch the user data from GitHub""") {
   gitHub(auths: {gitHubOAuthToken: $gitHubOAuthToken}) {
-    user(login: $login) {
-      login
-      name
-      avatarUrl
-      viewerCanSponsor
-      viewerIsSponsoring
-      isSponsoringViewer
+    search(query: $login, type: USER, first: 1) {
+      nodes {
+        ... on GitHubOrganization {
+          login
+          name
+          avatarUrl
+          viewerCanSponsor
+          viewerIsSponsoring
+          isSponsoringViewer
+        }
+        ... on GitHubUser {
+          login
+          name
+          avatarUrl
+          viewerCanSponsor
+          viewerIsSponsoring
+          isSponsoringViewer
+        }
+      }
     }
   }
-}`
+}
+`
 
 const httpFetch = (siteId, options) => {
       const reqBody = options.body || null

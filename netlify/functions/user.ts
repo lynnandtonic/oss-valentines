@@ -23,7 +23,7 @@ export const handler = async (event) => {
     };
   }
 
-  const user = GitHubDataData.gitHub.user;
+  const user = GitHubDataData.gitHub.search?.nodes?.[0];
 
   return {
     statusCode: 200,

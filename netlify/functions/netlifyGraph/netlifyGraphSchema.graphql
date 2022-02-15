@@ -6960,6 +6960,9 @@ type OneGraphDeleteNetlifyCliSessionResponsePayload {
 }
 
 input OneGraphUpdateNetlifyCliSessionInput {
+  """Mark the session active or inactive"""
+  status: OneGraphNetlifyCliSessionStatus
+
   """Optional metadata for the session"""
   metadata: JSON
 
@@ -9128,6 +9131,12 @@ type GitHubQuery {
   makeRestCall: GithubPassthroughQuery!
 }
 
+"""The status of a cli session"""
+enum OneGraphNetlifyCliSessionStatus {
+  ACTIVE
+  INACTIVE
+}
+
 type OneGraphNetlifyCliSession {
   id: String!
   appId: String!
@@ -9138,8 +9147,13 @@ type OneGraphNetlifyCliSession {
     first: Int = 1000
   ): [OneGraphNetlifyCliSessionEvent!]!
   createdAt: String!
+  updatedAt: String!
   lastEventAt: String
   metadata: JSON
+  status: OneGraphNetlifyCliSessionStatus!
+
+  """Number of milliseconds to wait between heartbeats"""
+  cliHeartbeatIntervalMs: Int!
 }
 
 type OneGraphNetlifyCliSessionLogEvent implements OneGraphNetlifyCliSessionEvent {
