@@ -28,10 +28,10 @@ module.exports = (data) => {
   <main class="container">
     <div class="content">
       <section class="cta cta-info">
-        <p class="center"><span><a href="https://github.com/${data.senderName}?metadata_campaign=netlifysendosslove2022">@${data.senderName}</a></span> sent you an OSS valentine to say “Thank you!”</p>
+        <p class="center"><span><a href="https://github.com/${data.senderName}?metadata_campaign=netlifysendosslove2022">@${data.senderName}</a></span> sent you a card to say “Thank you!”</p>
       </section>
       <section class="cta cta-preview">
-        <p class="center">Send this URL to your OSS valentine.</p>
+        <p class="center">Copy and share this URL with ${data.recipientName}.</p>
         <!-- NOTE: I removed the URL link because it was behaving unexpectedly -->
         <p class="share-link">https://oss.love/card/${data.path}</p>
         <div class="button-group">
@@ -39,7 +39,7 @@ module.exports = (data) => {
             <small class="copy-success"></small>
             <button class="copy-url">Copy</button>
           </div>
-          <a class="button tweet-link" href="https://twitter.com/intent/tweet?text=I can't keep my feelings a secret... I just have to share this valentine with the world!&url=https://oss.love/card/${data.path}">Tweet</a>
+          <a class="button tweet-link" href="https://twitter.com/intent/tweet?text=I can’t keep my feelings a secret... I just have to share this card with the world!&url=https://oss.love/card/${data.path}">Tweet</a>
         </div>
       </section>
       
