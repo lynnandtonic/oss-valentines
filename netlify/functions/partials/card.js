@@ -31,7 +31,7 @@ module.exports = (data) => {
         <p class="center"><span><a href="https://github.com/${data.senderName}?metadata_campaign=netlifysendosslove2022">@${data.senderName}</a></span> sent you a card to say “Thank you!”</p>
       </section>
       <section class="cta cta-preview">
-        <p class="center">Copy and share this URL with ${data.recipientName}.</p>
+        <p class="center">Copy and share this URL with @${data.recipientName}.</p>
         <!-- NOTE: I removed the URL link because it was behaving unexpectedly -->
         <p class="share-link">https://oss.love/card/${data.path}</p>
         <div class="button-group">
