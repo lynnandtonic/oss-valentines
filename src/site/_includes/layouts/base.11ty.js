@@ -22,7 +22,7 @@ exports.render = function(data) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="To show our love for the OSS community, join us in sending a valentine—a token of appreciation—to your favorite open source developers and projects.">
+  <meta name="description" content="Show your love for the OSS community and send a token of appreciation to your favorite open source developers and projects.">
   <title>Open source, Open hearts</title>
   <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
@@ -31,7 +31,7 @@ exports.render = function(data) {
   <meta content="@Netlify" name="twitter:site">
   <meta content="@Netlify" name="twitter:creator">
   <meta content="Open source, Open hearts" name="twitter:title" property="og:title">
-  <meta content="To show our love for the OSS community, join us in sending a valentine—a token of appreciation—to your favorite open source developers and projects." name="twitter:description" property="og:description">
+  <meta content="Show your love for the OSS community and send a token of appreciation to your favorite open source developers and projects." name="twitter:description" property="og:description">
   <meta content="https://oss.love" property="og:url">
   <meta content="https://oss.love" property="twitter:url">
   <meta content="${ogURL(data.ogPath)}" property="og:image">
