@@ -1,6 +1,6 @@
 # oss-valentines
 
-https://oss-valentine.netlify.app/
+https://oss.love
 
 ## Development
 
