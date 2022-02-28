@@ -1,6 +1,6 @@
-# oss-valentines
+# oss-valentines (https://oss.love)
 
-https://oss.love
+<img alt="Screenshot of oss.love" src="https://user-images.githubusercontent.com/5865/155968793-5de2b5d1-e782-4637-9088-977aaf1f78f8.png">
 
 ## Development
 
