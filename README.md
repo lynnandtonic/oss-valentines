@@ -2,6 +2,20 @@
 
 <img alt="Screenshot of oss.love" src="https://user-images.githubusercontent.com/5865/155968793-5de2b5d1-e782-4637-9088-977aaf1f78f8.png">
 
+
+## Overview
+
+This site was built to allow people to express their appreciation of open source contributors and organisations by selecting a greeting card, adding a recipient and sender name, and generating a unique URL for their customised card which they could share. The site uses:
+
+- [Eleventy](https://11ty.dev) for site templating
+- [Netlify Functions](https://www.netlify.com/products/functions) and [on-demand builders](https://docs.netlify.com/configure-builds/on-demand-builders/) for creating unique pages on demand
+- [Supabase](https://supabase.com/) via Netlify Functions for data persistence and retrieval
+- [Cloudinary](https://cloudinary.com/) for generating composite open graph images
+- [Netlify Graph](https://www.netlify.com/blog/announcing-netlify-graph-a-faster-way-for-teams-to-develop-web-apps-with-apis) for simplified API querying
+- [GitHub oAuth](https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps) for user authenticaion
+
+
+
 ## Development
 
 The site uses some templating via 11ty. 
@@ -14,6 +28,11 @@ npm i
 # do this via Netlify Dev in order to get ODB goodies
 ntl dev
 ```
+
+Access to the database (Supabase) is provided by environment variables. Authorised Netlifyers will be able to access these by linking their local site to the Netlfy project via `ntl link`. This will [populate your local development version with the centrally-managed environment variables](https://www.netlify.com/blog/2021/12/10/more-tips-for-environment-variables-and-netlify-cli/).
+
+Others will need to create their own Suapbase database and add their own environment variables to access it.
+
 
 ## Auth for local development
 
