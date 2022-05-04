@@ -1,6 +1,7 @@
 [
   { "image": "hello-world", "title": "A smiling Earth says “Hi” with small hearts. Text reads “You had me at Hello World”" },
   { "image": "fave-dependency", "title": "Isometric cubed pattern with some isolated and colored to look like hearts. Text reads “You’re my favorite dependency”" },
+  { "image": "a-time-before-you", "title": "A smiling hour glass. Text reads: “I wouldn’t go back to a time ::before you.”" },
   { "image": "div-without-you", "title": "A pattern of diamonds outlined to demonstrate the CSS box model. Text reads “I just couldn’t <div></div> without you”" },
   { "image": "run-array-with-me", "title": "Three suitcases each labeled 0, 1, and 2 respectively. Text reads “Run array with me”" },
   { "image": "jamstack", "title": "A smiling toast with jam and a small jam jar nearby. Text reads “You’re my Jam(stack)”" },
@@ -8,6 +9,7 @@
   { "image": "gui-u-and-i", "title": "You can’t spell GUI without U and I" },
   { "image": "unicode-u-n-i", "title": "“U+1F60D” is written out three times next to text that reads “You can’t spell Unicode with U ‘n’ I”" },
   { "image": "function-without-you", "title": "I couldn’t function {hearts} without you" },
+  { "image": "your-code-has-what-i-need", "title": "A rainbow in the clouds surrounded by birds and stars. Text reads: “#your-code:has(.what-i-need)" },
   { "image": "every-version", "title": "The text “Every version of you is great” surrounded by a background of software release versions like v0.0.1" },
   { "image": "lgtm", "title": "Your code always LGTM" },
   { "image": "outta-my-head", "title": "A smiling brain with small hearts. Text reads “I can’t get you out of my <head></head>”" },
@@ -18,5 +20,6 @@
   { "image": "the-best-style", "title": "A rainbow gradient of tshirts on hangers. Text reads “You’ve got the best <style>”" },
   { "image": "applet-of-my-eye", "title": "A smiley app window called “Applet a day.” Text reads “You’re the applet of my eye”" },
   { "image": "main-squeeze", "title": "A leafy branch with two hanging, smiling lemons. Text reads “You’re my main squeeze” with “main” styled like the branch dropdown in GitHub." },
+  { "image": "align-self-with-you", "title": "Two little smiling boxes in different rows are aligned with each other instead of the other boxes in their row. Text reads: “It’s easy to align-self with you.”" },
   { "image": "thank-you", "title": "Thank you for building a better web" }
 ]
