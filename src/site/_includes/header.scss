@@ -20,9 +20,14 @@ header .masthead {
 
 header .masthead-logo,
 header .masthead-heart {
-	height: 20px;
+	height: 40px;
 	display: inline-flex;
 	margin-right: .3em;
+}
+
+header .masthead-logo {
+	position: relative;
+	top: 1px;
 }
 
 header button,
