@@ -38,3 +38,27 @@
 	margin-top: 0;
 	padding-top: 5em;
 }
+
+.footer-list {
+	list-style: none;
+	margin-block-start: 2rem;
+	display: flex;
+	text-align: left;
+	width: 100%;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.footer-list li:first-of-type {
+	flex: 1;
+}
+	
+@media (max-width: 575px) {
+	.footer-list {
+		flex-direction: column;
+	}
+}
+
+.footer-list .footer-copyright {
+	margin: 0;
+}

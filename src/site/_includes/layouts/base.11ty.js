@@ -14,6 +14,10 @@ const ogURL = (path) => {
   }
 };
 
+const getYear = () => {
+  return new Date().getFullYear()
+}
+
 exports.render = function (data) {
   return `
 <!doctype html>
@@ -74,6 +78,26 @@ exports.render = function (data) {
       <a href=" https://www.netlify.com/?utm_campaign=oss-love" class="netlify-logo">
         <img src="/img/netlify-logo-mark-color.svg" alt="Netlify logo" />
       </a>
+      <ul class="footer-list">
+        <li>
+          <p class="footer-copyright">© ${getYear()} Netlify</p>
+        </li>
+        <li>
+          <a href="https://www.netlify.com/trust-center/" id="cta-footer-trustcenter">Trust Center</a>
+        </li>
+        <li>
+          <a href="https://www.netlify.com/privacy/" id="cta-footer-privacypolicy">Privacy</a>
+        </li>
+        <li>
+          <a href="https://www.netlify.com/security/" id="cta-footer-security">Security</a>
+        </li>
+        <li>
+          <a href="https://www.netlify.com/gdpr-ccpa/" id="cta-footer-gdpr">GDPR/CCPA</a>
+        </li>
+        <li>
+          <a href="mailto:fraud@netlify.com?subject=Abuse%20report&body=Please%20include%20the%20site%20URL%20and%20reason%20for%20your%20report%2C%20and%20we%20will%20reply%20promptly." id="cta-footer-abuse" target="_blank" rel="noopener noreferrer">Abuse</a>
+        </li>
+      </ul>
     </div>
   </footer>
 
