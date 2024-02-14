@@ -1,9 +1,5 @@
 module.exports = (data) => {
-
-
   const sponsorCTA = (data) => {
-
-
     console.log(data);
 
     if (data.recipientCanBeSponsored) {
@@ -16,30 +12,34 @@ module.exports = (data) => {
         <p>Show your support by helping to fund their work.</p>
       </div>
       <a href="https://github.com/sponsors/${data.recipientName}?metadata_campaign=netlifysendosslove2022" class="button blue">Sponsor now</a>
-    </div>`
+    </div>`;
     } else {
       return "";
     }
   };
 
-
-
   return `
   <main class="container">
     <div class="content">
       <section class="cta cta-info">
-        <p class="center"><span><a href="https://github.com/${data.senderName}?metadata_campaign=netlifysendosslove2022">@${data.senderName}</a></span> sent you a card to say “Thank you!”</p>
+        <p class="center"><span><a href="https://github.com/${
+          data.senderName
+        }?metadata_campaign=netlifysendosslove2022">@${
+    data.senderName
+  }</a></span> sent you a card to say “Thank you!”</p>
       </section>
       <section class="cta cta-preview">
         <p class="center">Copy and share this URL with @${data.recipientName}.</p>
         <!-- NOTE: I removed the URL link because it was behaving unexpectedly -->
-        <p class="share-link">https://oss.love/card/${data.path}</p>
+        <p class="share-link">https://oss-valentine.netlify.app/card/${data.path}</p>
         <div class="button-group">
           <div class="copy-util">
             <small class="copy-success"></small>
             <button class="copy-url">Copy</button>
           </div>
-          <a class="button tweet-link" href="https://twitter.com/intent/tweet?text=I can’t keep my feelings a secret... I just have to share this card with the world!&url=https://oss.love/card/${data.path}">Tweet</a>
+          <a class="button tweet-link" href="https://twitter.com/intent/tweet?text=I can’t keep my feelings a secret... I just have to share this card with the world!&url=https://oss-valentine.netlify.app/card/${
+            data.path
+          }">Tweet</a>
         </div>
       </section>
       
@@ -48,11 +48,19 @@ module.exports = (data) => {
         <img src="/img/valentines/${data.cardVariant}" alt="" class="valentine" />
         <div class="recipient-details">
           <img class="user-avatar recipient-user-avatar" src="${data.recipientAvatar}" alt="" />
-          <a href="https://github.com/${data.recipientName}?metadata_campaign=netlifysendosslove2022" class="user-handle recipient-user-handle" target="_blank">${data.recipientName}</a>
+          <a href="https://github.com/${
+            data.recipientName
+          }?metadata_campaign=netlifysendosslove2022" class="user-handle recipient-user-handle" target="_blank">${
+    data.recipientName
+  }</a>
         </div>
         <div class="sender-details">
           <img class="user-avatar logged-in-user-avatar" src="${data.senderAvatar}" alt="" />
-          <a href="https://github.com/${data.senderName}?metadata_campaign=netlifysendosslove2022" class="user-handle logged-in-user-handle" target="_blank">${data.senderName}</a>
+          <a href="https://github.com/${
+            data.senderName
+          }?metadata_campaign=netlifysendosslove2022" class="user-handle logged-in-user-handle" target="_blank">${
+    data.senderName
+  }</a>
         </div>
       </div>
 

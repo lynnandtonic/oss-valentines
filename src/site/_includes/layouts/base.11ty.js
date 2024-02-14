@@ -1,22 +1,20 @@
 exports.data = {
   title: "Open source, open hearts",
   bannerTitle: "Share the love",
-  scripts: []
+  scripts: [],
 };
-
-
 
 const ogURL = (path) => {
   if (path) {
-    return `https://oss.love/og/${path}`;
+    return `https://oss-valentine.netlify.app/og/${path}`;
   } else {
-    return `https://oss.love/img/oss-og.png`
+    return `https://oss-valentine.netlify.app/img/oss-og.png`;
   }
 };
 
 const getYear = () => {
-  return new Date().getFullYear()
-}
+  return new Date().getFullYear();
+};
 
 exports.render = function (data) {
   return `
@@ -36,8 +34,8 @@ exports.render = function (data) {
   <meta content="@Netlify" name="twitter:creator">
   <meta content="Open source, Open hearts" name="twitter:title" property="og:title">
   <meta content="Show your love for the OSS community and send a token of appreciation to your favorite open source developers and projects." name="twitter:description" property="og:description">
-  <meta content="https://oss.love" property="og:url">
-  <meta content="https://oss.love" property="twitter:url">
+  <meta content="https://oss-valentine.netlify.app" property="og:url">
+  <meta content="https://oss-valentine.netlify.app" property="twitter:url">
   <meta content="${ogURL(data.ogPath)}" property="og:image">
   <meta content="${ogURL(data.ogPath)}" name="twitter:image">
   <link rel="stylesheet" href="/styles.css">  
@@ -102,7 +100,7 @@ exports.render = function (data) {
   </footer>
 
   <script src="/js/focus-visible.min.js"></script>
-  ${data.scripts.map(s => '<script src="/js/' + s + '"></script>').join("")}
+  ${data.scripts.map((s) => '<script src="/js/' + s + '"></script>').join("")}
 </body>
 
 </html>`;
