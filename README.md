@@ -3,7 +3,7 @@
 ![Open-source-Open-hearts](https://github.com/lynnandtonic/oss-valentines/assets/871315/b2acbd97-c16b-44c7-93d2-df510ae72a22)
 
 Originally built by a small team at Netlify.
-Now maintained by [https://github.com/lynnandtonic](@lynnandtonic) and presented by [https://opensauced.pizza](OpenSauced) and [https://ui.dev](ui.dev).
+Now maintained by [@lynnandtonic](https://github.com/lynnandtonic) and presented by [OpenSauced](https://opensauced.pizza) and [ui.dev](https://ui.dev).
 
 ## Overview
 
