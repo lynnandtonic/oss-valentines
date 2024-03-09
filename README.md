@@ -1,7 +1,9 @@
 # oss-valentines (https://oss.love)
 
-<img alt="Screenshot of oss.love" src="https://user-images.githubusercontent.com/5865/155968793-5de2b5d1-e782-4637-9088-977aaf1f78f8.png">
+![Open-source-Open-hearts](https://github.com/lynnandtonic/oss-valentines/assets/871315/b2acbd97-c16b-44c7-93d2-df510ae72a22)
 
+Originally built by a small team at Netlify.
+Now maintained by [https://github.com/lynnandtonic](@lynnandtonic) and presented by [https://opensauced.pizza](OpenSauced) and [https://ui.dev](ui.dev).
 
 ## Overview
 
@@ -13,7 +15,6 @@ This site was built to allow people to express their appreciation of open source
 - [Cloudinary](https://cloudinary.com/) for generating composite open graph images
 - [Netlify Graph](https://www.netlify.com/blog/announcing-netlify-graph-a-faster-way-for-teams-to-develop-web-apps-with-apis) for simplified API querying
 - [GitHub oAuth](https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps) for user authenticaion
-
 
 
 ## Development
