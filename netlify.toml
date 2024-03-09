@@ -2,11 +2,15 @@
   publish = "dist"
   command = "npm run build"
 
-
 [dev] 
   publish = "dist"
   command = "npm run dev"
 
+[[redirects]]
+  from = "https://oss-valentine.netlify.app"
+  to = "https://oss.love"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/create"
