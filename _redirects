@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://oss-valentine.netlify.app/* https://oss.love/:splat 301!
