@@ -7,6 +7,7 @@ header {
 	gap: .6em;
 	align-items: center;
 	background-color: white;
+	border-bottom: 1px solid var(--color-red-R400);
 }
 
 header .masthead {
@@ -18,16 +19,10 @@ header .masthead {
 	text-decoration: none;
 }
 
-header .masthead-logo,
 header .masthead-heart {
-	height: 40px;
+	height: 30px;
 	display: inline-flex;
 	margin-right: .3em;
-}
-
-header .masthead-logo {
-	position: relative;
-	top: 1px;
 }
 
 header button,
@@ -67,9 +62,14 @@ header .logged-in-user {
 		padding: .5rem 1rem;
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		gap: .5em;
 		flex-basis: calc(100% + 2em);
 		order: 3;
+	}
+
+	.instructions svg {
+		width: 50px;
 	}
 }
 
@@ -89,8 +89,9 @@ header .logged-in-user {
 	}
 
 	.instructions svg {
+		width: 45px;
 		display: block;
-		margin: .4em auto 0;
+		margin: 0 auto;
 	}
 
 	.instructions::before {

@@ -26,6 +26,9 @@
 	grid-row: 1 / 4;
 	align-self: start;
 	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	border: 1px solid var(--color-red-R400);
 	align-self: stretch;
 }
@@ -62,6 +65,51 @@
 
 .view-choose .byline {
 	margin-top: 1.2em;
+	max-width: 180px;
+}
+
+.intro .sponsors {
+	margin: 2.5em -1.5em -1.5em;
+}
+
+.intro .sponsors h4 {
+	padding: .3em 1.5em .2em;
+	background-color: var(--color-red-R100);
+	border-top: 1px solid var(--color-red-R400);
+	border-bottom: 1px solid var(--color-red-R400);
+	font-size: 70%;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--color-red-R700)
+}
+
+.intro .sponsors > div {
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+	place-items: center;
+	gap: 1px;
+	background-color: var(--color-red-R400);
+}
+
+.intro .sponsors > div a {
+	min-height: 4rem;
+	align-self: stretch;
+	justify-self: stretch;
+	display: grid;
+	place-content: center;
+	background-color: white;
+	// background-color: var(--color-red-R100);
+	text-decoration: none;
+}
+
+.intro .sponsors .opensauced {
+	width: 8rem;
+	height: auto;
+}
+
+.intro .sponsors .uidev {
+	width: 2.5rem;
 }
 
 :root {
@@ -97,6 +145,7 @@
 	aspect-ratio: 120/63;
 	display: grid;
 	place-items: center;
+	background-color: var(--color-red-R100);
 	border: 1px solid var(--color-red-R400);
 	text-align: center;
 }
@@ -106,16 +155,16 @@
 	margin-top: .5em;
 }
 
-.js-focus-visible .valentine:focus:not(.focus-visible) {
+.valentine:focus:not(.focus-visible) {
 	outline: none;
 }
 
-.js-focus-visible .valentine.focus-visible {
+.valentine.focus-visible {
 	outline-color: var(--color-focus-ring);
 }
 
 @supports (box-shadow: none) {
-	.js-focus-visible .valentine.focus-visible {
+	.valentine.focus-visible {
 		outline: none;
 		box-shadow: 0 0 1px 4px var(--color-focus-ring);
 	}

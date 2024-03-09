@@ -30,8 +30,8 @@ button:disabled {
   filter: grayscale(100%);
 }
 
-.js-focus-visible button.focus-visible,
-.js-focus-visible .button.focus-visible {
+button.focus-visible,
+.button.focus-visible {
   box-shadow: 0 0 1px 4px var(--color-teal-T600);
 }
 

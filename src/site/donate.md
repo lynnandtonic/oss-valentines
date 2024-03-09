@@ -13,6 +13,5 @@ pageClass: view-card view-donate
       <!-- Moves to Review step -->
       <a href="/review" class="button">Not now</a>
     </section>
-    <img src="/img/valentine-with-recipient.svg"  alt="" class="valentine" />
   </div>
 </main>

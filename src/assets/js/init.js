@@ -70,7 +70,7 @@ function toggleCardUI() {
     const handle = document.querySelector(".logged-in-user-handle");
     const avatar = document.querySelector(".logged-in-user-avatar");
     handle.innerText = `@${localUser.login}`;
-    handle.href = `https://github.com/${localUser.login}?metadata_campaign=netlifysendosslove2022`;
+    handle.href = `https://github.com/${localUser.login}`;
     avatar.src = `${localUser.avatar_url}`;
     btnHandler(".add-recipient", findGitHubRecipient);
 
@@ -118,7 +118,7 @@ function setRecipientUser(data) {
   const handle = document.querySelector(".recipient-user-handle");
   const avatar = document.querySelector(".recipient-user-avatar");
   handle.innerText = `@${data.login}`;
-  handle.href = `https://github.com/${data.login}?metadata_campaign=netlifysendosslove2022`;
+  handle.href = `https://github.com/${data.login}`;
   avatar.src = `${data.avatarUrl}`;
 
   //update form values
