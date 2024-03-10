@@ -123,7 +123,7 @@
 }
 
 .view-card input:focus {
-  box-shadow: 0 0 1px 4px var(--color-focus-ring);
+  box-shadow: 0 0 0 4px var(--color-focus-ring);
 }
 
 .view-card input.error:focus {

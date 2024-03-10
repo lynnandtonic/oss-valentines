@@ -40,14 +40,15 @@ img {
 	text-align: center;
 }
 
-:focus:not(.focus-visible) {
+:focus:not(:focus-visible) {
 	outline: none;
 }
-.focus-visible {
+:focus-visible {
 	outline-color: var(--color-focus-ring);
+	z-index: 1;
 }
 @supports (box-shadow: none) {
-	.focus-visible {
+	:focus-visible {
 		outline: none;
 		box-shadow: 0 0 1px 4px var(--color-focus-ring);
 	}

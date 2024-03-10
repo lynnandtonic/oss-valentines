@@ -115,17 +115,17 @@
 	margin-top: .5em;
 }
 
-.valentine:focus:not(.focus-visible) {
+.valentine:focus:not(:focus-visible) {
 	outline: none;
 }
 
-.valentine.focus-visible {
+.valentine:focus-visible {
 	outline-color: var(--color-focus-ring);
 }
 
 @supports (box-shadow: none) {
-	.valentine.focus-visible {
+	.valentine:focus-visible {
 		outline: none;
-		box-shadow: 0 0 1px 4px var(--color-focus-ring);
+		box-shadow: 0 0 0 2px white, 0 0 0 6px var(--color-focus-ring);
 	}
 }
