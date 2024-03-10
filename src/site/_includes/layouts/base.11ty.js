@@ -82,8 +82,11 @@ exports.render = function (data) {
       <p><small><a href="https://github.com/lynnandtonic/oss-valentines">This project is open source on GitHub</a></small></p>
     </div>
     <div class="sponsors">
-      <a href="https://opensauced.pizza"><h4>Presented by</h4><img src="/img/opensauced.svg" class="opensauced" alt="OpenSauced" width="140" height="24"></a>
-      <a href="https://ui.dev/"><h4>Presented by</h4><img src="/img/uidotdev.svg" class="uidev" alt="ui.dev" width="50" height="50" /></a>
+      <h4>Presented by</h4>
+      <div>
+        <a href="https://opensauced.pizza"><img src="/img/opensauced.svg" class="opensauced" alt="OpenSauced" width="140" height="24"></a>
+        <a href="https://ui.dev/"><img src="/img/uidotdev.svg" class="uidev" alt="ui.dev" width="50" height="50" /></a>
+      </div>
     </div>
   </footer>
 

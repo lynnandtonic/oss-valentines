@@ -2,7 +2,8 @@
 	margin-top: auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-	background-color: white;
+	gap: 0 1px;
+  background-color: var(--color-red-R400);
 }
 
 .footer-main a:hover {
@@ -18,6 +19,7 @@
 	padding: calc(var(--grid-gutter) * 2) var(--grid-gutter);
 	display: grid;
 	gap: 1rem;
+	background-color: white;
 	border-top: 1px solid var(--color-red-R400);
 }
 
@@ -30,50 +32,4 @@
 	margin-top: -3px;
 	display: inline-block;
 	vertical-align: top;
-}
-
-.footer-main .sponsors {
-	display: grid;
-	grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
-	place-items: center;
-	gap: 1px;
-	background-color: var(--color-red-R400);
-	border-left: 1px solid var(--color-red-R400);
-	border-top: 1px solid var(--color-red-R400);
-}
-
-.footer-main .sponsors a {
-	min-height: 8rem;
-	align-self: stretch;
-	justify-self: stretch;
-	display: grid;
-	grid-template-rows: auto 1fr;
-	justify-items: center;
-	background-color: white;
-	text-decoration: none;
-}
-
-.footer-main .sponsors a h4 {
-	width: 100%;
-	padding: .5em;
-	background-color: var(--color-red-R100);
-	// border-bottom: 1px solid var(--color-red-R400);
-	font-size: 70%;
-	font-weight: 500;
-	text-align: center;
-	text-transform: uppercase;
-	color: var(--color-red-R600);
-}
-
-.footer-main .sponsors a img {
-	align-self: center;
-}
-
-.footer-main .opensauced {
-	width: 12rem;
-	height: auto;
-}
-
-.footer-main .uidev {
-	width: 3.4rem;
 }
