@@ -78,7 +78,7 @@ exports.render = function (data) {
   <footer class="footer-main">
     <div class="contributors">
       <p>Made with <svg class="footer-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"><polygon points="70 79.68 36.47 60.32 2.95 79.68 70 118.39 137.06 79.68 103.53 60.32 70 79.68" fill="#b7303d" stroke="#1c2126" stroke-linejoin="round" stroke-width="2"/><polygon points="36.47 21.61 36.47 60.32 2.94 79.68 2.95 40.97 36.47 21.61" fill="#ea4f4b" stroke="#1c2126" stroke-linejoin="round" stroke-width="2"/><polygon points="36.47 21.61 36.47 60.32 70 79.68 70 40.97 36.47 21.61" fill="#ff6b60" stroke="#1c2126" stroke-linejoin="round" stroke-width="2"/><polygon points="103.53 21.61 103.52 60.32 70 79.68 70 40.97 103.53 21.61" fill="#ea4f4b" stroke="#1c2126" stroke-linejoin="round" stroke-width="2"/><polygon points="103.53 21.61 103.53 60.32 137.05 79.68 137.05 40.97 103.53 21.61" fill="#ff6b60" stroke="#1c2126" stroke-linejoin="round" stroke-width="2"/></svg> by <a href="https://lynnandtonic.com">Lynn Fisher</a></p>
-      <small>Thank you to <a href="https://www.hawksworx.com/">Phil Hawksworth</a>, <a href="https://jason.energy/">Jason Lengstorf</a>, and <a href="https://ryanmulligan.dev/">Ryan Mulligan</a></small>
+      <small>Thank you to <a href='https://netlify.com'>Netlify</a>, <a href="https://www.hawksworx.com/">Phil Hawksworth</a>, <a href="https://jason.energy/">Jason Lengstorf</a>, and <a href="https://ryanmulligan.dev/">Ryan Mulligan</a></small>
       <p><small><a href="https://github.com/lynnandtonic/oss-valentines">This project is open source on GitHub</a></small></p>
     </div>
     <div class="sponsors">
