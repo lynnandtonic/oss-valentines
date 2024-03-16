@@ -72,6 +72,26 @@
 	margin: 2.5em -1.5em -1.5em;
 }
 
+.view-choose .warning {
+	padding: 10px 20px;
+	display: grid;
+	align-content: center;
+	justify-items: center;
+	background-color: var(--color-red-R700);
+	align-self: stretch;
+	color: white;
+}
+
+.view-choose .warning span {
+	font-size: 2em;
+}
+
+.view-choose .warning p {
+	font-size: 1rem;
+	text-align: center;
+	text-wrap: pretty;
+}
+
 :root {
 	--shadow-color: 18deg 43% 62%;
 }
