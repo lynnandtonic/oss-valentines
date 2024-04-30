@@ -46,7 +46,7 @@ const handler = async (event) => {
     cardData.recipientAvatar
   )},r_max,w_70,g_south_west,x_75,y_48`;
 
-  const ogUrl = `https://res.cloudinary.com/netlify/image/upload/${senderName}/${senderAvatar}/${recipientName}/${recipientAvatar}/${bgImageUrl}`;
+  const ogUrl = `https://res.cloudinary.com/dlb090tcz/image/upload/${senderName}/${senderAvatar}/${recipientName}/${recipientAvatar}/${bgImageUrl}`;
   console.log(ogUrl);
 
   let image;
