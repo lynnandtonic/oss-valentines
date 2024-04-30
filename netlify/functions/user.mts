@@ -42,7 +42,7 @@ export default async (req: Request, context: Context) => {
   }
 
   const { data } = await response.json();
-  console.log(data);
+
   return new Response(JSON.stringify(data.user), {
     status: 200,
     headers: {
