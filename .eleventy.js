@@ -1,9 +1,8 @@
-const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
+const directoryOutputPlugin = require('@11ty/eleventy-plugin-directory-output');
 const sass = require('sass');
 // const uglify = require("uglify-js");
 
-module.exports = function(eleventyConfig) {
-
+module.exports = function (eleventyConfig) {
   eleventyConfig.setQuietMode(true);
   eleventyConfig.addPlugin(directoryOutputPlugin, {
     columns: {
@@ -14,36 +13,31 @@ module.exports = function(eleventyConfig) {
   });
 
   // Sass pipeline
-  eleventyConfig.addTemplateFormats("scss");
-  eleventyConfig.addExtension("scss", {
-    outputFileExtension: "css",
-    compile: function(contents, includePath) {
+  eleventyConfig.addTemplateFormats('scss');
+  eleventyConfig.addExtension('scss', {
+    outputFileExtension: 'css',
+    compile: function (contents, includePath) {
       let includePaths = [this.config.dir.includes];
       return () => {
         let ret = sass.renderSync({
           file: includePath,
           includePaths,
           data: contents,
-          outputStyle: "compressed"
+          outputStyle: 'compressed',
         });
-        return ret.css.toString("utf8");
-      }
-    }
+        return ret.css.toString('utf8');
+      };
+    },
   });
 
-
-
-
   // Pass through assets
-  eleventyConfig.addPassthroughCopy({ "src/assets": "/" });
-
+  eleventyConfig.addPassthroughCopy({ 'src/assets': '/' });
 
   return {
     dir: {
-      input: "src/site",
-      includes: "_includes",
-      output: "dist"
+      input: 'src/site',
+      includes: '_includes',
+      output: 'dist',
     },
   };
-
-}
+};

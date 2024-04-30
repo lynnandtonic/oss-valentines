@@ -1,7 +1,7 @@
 button,
 .button,
-.view-card input[type=submit] {
-  padding: .5em 1em .6em;
+.view-card input[type='submit'] {
+  padding: 0.5em 1em 0.6em;
   display: inline-block;
   background-color: var(--color-teal-T500);
   border-radius: 4px;
@@ -18,13 +18,13 @@ button,
 
 button:hover,
 .button:hover,
-.view-card input[type=submit]:hover {
+.view-card input[type='submit']:hover {
   background-color: var(--color-teal-T200);
   cursor: pointer;
 }
 
-input[type=submit]:disabled,
-input[type=submit]:disabled:hover,
+input[type='submit']:disabled,
+input[type='submit']:disabled:hover,
 button:disabled {
   cursor: not-allowed;
   filter: grayscale(100%);

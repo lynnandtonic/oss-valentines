@@ -1,3 +1,3 @@
-(async function() {
+(async function () {
   toggleCardUI();
 })();

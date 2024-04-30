@@ -1,43 +1,43 @@
-[build] 
-  publish = "dist"
-  command = "npm run build"
+[build]
+publish = "dist"
+command = "npm run build"
 
-[dev] 
-  publish = "dist"
-  command = "npm run dev"
-
-[[redirects]]
-  from = "https://oss-valentine.netlify.app"
-  to = "https://oss.love"
-  status = 301
-  force = true
+[dev]
+publish = "dist"
+command = "npm run dev"
 
 [[redirects]]
-  from = "/create"
-  to = "/.netlify/functions/save-card"
-  status = 200
+from = "https://oss-valentine.netlify.app"
+to = "https://oss.love"
+status = 301
+force = true
 
 [[redirects]]
-  from = "/card/*"
-  to = "/.netlify/builders/view-card"
-  status = 200
+from = "/create"
+to = "/.netlify/functions/save-card"
+status = 200
 
 [[redirects]]
-   from = "/auth/*"
-   to = "/.netlify/functions/auth-:splat"
-   status = 200
+from = "/card/*"
+to = "/.netlify/builders/view-card"
+status = 200
 
 [[redirects]]
-   from = "/api/user/:username"
-   to = "/.netlify/functions/user"
-   status = 200
+from = "/auth/*"
+to = "/.netlify/functions/auth-:splat"
+status = 200
 
 [[redirects]]
-   from = "/api/*"
-   to = "/.netlify/functions/:splat"
-   status = 200
+from = "/api/user/:username"
+to = "/.netlify/functions/user"
+status = 200
 
 [[redirects]]
-   from = "/og/*"
-   to = "/.netlify/functions/view-og"
-   status = 200
+from = "/api/*"
+to = "/.netlify/functions/:splat"
+status = 200
+
+[[redirects]]
+from = "/og/*"
+to = "/.netlify/functions/view-og"
+status = 200

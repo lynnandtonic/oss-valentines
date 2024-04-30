@@ -1,22 +1,20 @@
 exports.data = {
-  title: "Open source, open hearts",
-  bannerTitle: "Share the love",
-  scripts: []
+  title: 'Open source, open hearts',
+  bannerTitle: 'Share the love',
+  scripts: [],
 };
-
-
 
 const ogURL = (path) => {
   if (path) {
     return `https://oss.love/og/${path}`;
   } else {
-    return `https://oss.love/img/oss-og.png`
+    return `https://oss.love/img/oss-og.png`;
   }
 };
 
 const getYear = () => {
-  return new Date().getFullYear()
-}
+  return new Date().getFullYear();
+};
 
 exports.render = function (data) {
   return `
@@ -90,7 +88,7 @@ exports.render = function (data) {
     </div>
   </footer>
 
-  ${data.scripts.map(s => '<script src="/js/' + s + '"></script>').join("")}
+  ${data.scripts.map((s) => '<script src="/js/' + s + '"></script>').join('')}
 </body>
 
 </html>`;

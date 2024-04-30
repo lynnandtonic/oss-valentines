@@ -23,12 +23,12 @@ export const handler: Handler = async (event) => {
   });
 
   let returnUrl = '/';
-  if(event.headers.cookie){
+  if (event.headers.cookie) {
     const cookies = parse(event.headers.cookie);
-    if(cookies["nf-authed-path"]) {
-      returnUrl = JSON.parse(cookies["nf-authed-path"]).route;
-      if(typeof returnUrl !== "string"){
-        returnUrl = "/";
+    if (cookies['nf-authed-path']) {
+      returnUrl = JSON.parse(cookies['nf-authed-path']).route;
+      if (typeof returnUrl !== 'string') {
+        returnUrl = '/';
       }
     }
   }
@@ -36,7 +36,7 @@ export const handler: Handler = async (event) => {
     statusCode: 301,
     headers: {
       'Set-Cookie': tokenCookie,
-      Location: returnUrl
+      Location: returnUrl,
     },
     body: 'redirecting...',
   };
