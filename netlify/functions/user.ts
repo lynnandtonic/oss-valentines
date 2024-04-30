@@ -1,33 +1,44 @@
-import NetlifyGraph from './netlifyGraph';
 import { parse } from 'cookie';
 
 export const handler = async (event) => {
-  const [, , , username = 'philhawksworth'] = event.path.split('/');
+  const [, , , username = ''] = event.path.split('/');
   const cookies = parse(event.headers.cookie);
   const auth = JSON.parse(cookies['nf-gh-session']);
 
-  const { errors: GitHubDataErrors, data: GitHubDataData } =
-    await NetlifyGraph.fetchGitHubData({
-      login: username,
-      gitHubOAuthToken: auth.access_token,
-    });
-
-  if (GitHubDataErrors) {
-    console.error(JSON.stringify(GitHubDataErrors, null, 2));
-    return {
-      statusCode: 500,
-      body: JSON.stringify(GitHubDataErrors),
-      headers: {
-        'content-type': 'application/json',
+  const response = await fetch('https://api.github.com/graphql', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${auth.access_token}`,
+    },
+    body: JSON.stringify({
+      query: `
+        query ($login: String!) {
+          user(login: $login) {
+            avatarUrl
+            login
+            name
+            viewerCanSponsor
+          }
+        }
+      `,
+      variables: {
+        login: username,
       },
+    }),
+  });
+
+  if (!response.ok) {
+    return {
+      statusCode: response.status,
+      body: response.statusText,
     };
   }
 
-  const user = GitHubDataData.gitHub.search?.nodes?.[0];
+  const { data } = await response.json();
 
   return {
     statusCode: 200,
-    body: JSON.stringify(user),
+    body: JSON.stringify(data.user),
     headers: {
       'content-type': 'application/json',
     },

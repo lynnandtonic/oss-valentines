@@ -15,7 +15,7 @@ export const handler: Handler = async (event) => {
     };
   }
   const cookies = parse(event.headers?.cookie);
-  console.log({ cookies });
+
   if (!cookies['nf-gh-session']) {
     return {
       statusCode: 401,

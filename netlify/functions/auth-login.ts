@@ -3,26 +3,27 @@ import { getWebFlowAuthorizationUrl } from '@octokit/oauth-methods';
 import { serialize } from 'cookie';
 
 export const handler: Handler = async (event) => {
-
-  let returnRoute = "/";
-  if(event.headers.referer) {
+  let returnRoute = '/';
+  if (event.headers.referer) {
     returnRoute = event.headers.referer;
-  };
+  }
 
-  const redirectCookie = serialize('nf-authed-path',  JSON.stringify({route: returnRoute}), {
-    secure: true,
-    httpOnly: true,
-    sameSite: true,
-    maxAge: 1000 * 60 * 60  // one hour
-  });
+  const redirectCookie = serialize(
+    'nf-authed-path',
+    JSON.stringify({ route: returnRoute }),
+    {
+      secure: true,
+      httpOnly: true,
+      sameSite: true,
+      maxAge: 1000 * 60 * 60, // one hour
+    }
+  );
 
   const { url } = await getWebFlowAuthorizationUrl({
     clientType: 'oauth-app',
     clientId: process.env.GITHUB_APP_CLIENT_ID,
     scopes: ['read:user', 'read:org'],
   });
-
-  console.log(`getWebFlowAuthorizationUrl: ${url}`)
 
   return {
     statusCode: 301,
