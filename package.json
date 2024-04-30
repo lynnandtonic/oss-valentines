@@ -20,7 +20,7 @@
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-plugin-directory-output": "^1.0.1",
-    "@netlify/functions": "^0.11.0",
+    "@netlify/functions": "^2.6.0",
     "@octokit/graphql": "^4.8.0",
     "@octokit/oauth-app": "^3.6.0",
     "@octokit/oauth-methods": "^1.2.6",
@@ -28,5 +28,8 @@
     "node-fetch": "^2.7.0",
     "sass": "^1.49.7",
     "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.23.1"
   }
 }
