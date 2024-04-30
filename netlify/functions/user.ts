@@ -1,4 +1,5 @@
 import { parse } from 'cookie';
+import fetch from 'node-fetch';
 
 export const handler = async (event) => {
   const [, , , username = ''] = event.path.split('/');
