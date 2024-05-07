@@ -1,7 +1,7 @@
 {
   "name": "oss-valentines",
   "version": "1.0.0",
-  "description": "",
+  "description": "The code that powers https://oss.love",
   "scripts": {
     "build": "eleventy",
     "dev": "eleventy --serve"
@@ -31,5 +31,6 @@
   },
   "devDependencies": {
     "netlify-cli": "^17.23.1"
-  }
+  },
+  "private": true
 }
