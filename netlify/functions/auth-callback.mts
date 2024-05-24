@@ -12,6 +12,17 @@ export default async (req: Request, context: Context) => {
     code,
   });
 
+  if (!data || !data.access_token) {
+    console.log('no token found');
+
+    return new Response('redirecting...', {
+      status: 301,
+      headers: {
+        Location: '/',
+      },
+    });
+  }
+
   context.cookies.set({
     name: 'nf-gh-session',
     value: encodeURIComponent(JSON.stringify(data)),
