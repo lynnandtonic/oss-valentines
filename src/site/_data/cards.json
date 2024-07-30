@@ -1,5 +1,17 @@
 [
   {
+    "image": "passing-props",
+    "title": "three clapping emojis. Text reads “Passing all the props to you”"
+  },
+  {
+    "image": "slice-it",
+    "title": "A happy slice of pepperoni pizza. Text reads “Your code is great no matter how you slice it”"
+  },
+  {
+    "image": "trick-or-treat",
+    "title": "A jack-o-lantern surrounded by candy corn. JSON code reads “code: yours, trick: false, treat: true”"
+  },
+  {
     "image": "hello-world",
     "title": "A smiling Earth says “Hi” with small hearts. Text reads “You had me at Hello World”"
   },
