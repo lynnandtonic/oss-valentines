@@ -1,4 +1,4 @@
-# oss-valentines (https://oss.love)
+# oss-valentines (https://oss.cards) 
 
 ![Open-source-Open-hearts](https://github.com/lynnandtonic/oss-valentines/assets/871315/b2acbd97-c16b-44c7-93d2-df510ae72a22)
 
@@ -46,7 +46,7 @@ ntl dev --live
 
 This will generate a unique public URL which is valid for the duration of the local server's life. Each time you kill the server and run it again, you'll get a new unique URL.
 
-You can provide this URL to GitHub as the basis for an oAuth application. In production this is oAuth application is maintained under the Netlify account and associated with the https://oss.love domain.
+You can provide this URL to GitHub as the basis for an oAuth application. In production this is oAuth application is maintained under the Netlify account and associated with the https://oss.cards domain.
 
 To create your own GitHub oAuth application for local testing visit the [Developer Settings](https://github.com/settings/developers) section of [your profile](https://github.com/settings/profile)
 

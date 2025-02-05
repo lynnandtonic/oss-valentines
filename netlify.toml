@@ -8,7 +8,7 @@ command = "npm run dev"
 
 [[redirects]]
 from = "https://oss-valentine.netlify.app"
-to = "https://oss.love"
+to = "https://oss.cards"
 status = 301
 force = true
 

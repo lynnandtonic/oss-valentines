@@ -6,9 +6,9 @@ exports.data = {
 
 const ogURL = (path) => {
   if (path) {
-    return `https://oss.love/og/${path}`;
+    return `https://oss.cards/og/${path}`;
   } else {
-    return `https://oss.love/img/oss-og.png`;
+    return `https://oss.cards/img/oss-og.png`;
   }
 };
 
@@ -34,8 +34,8 @@ exports.render = function (data) {
   <meta content="@lynnandtonic" name="twitter:creator">
   <meta content="Open source, Open hearts" name="twitter:title" property="og:title">
   <meta content="Show your love for the OSS community and send a token of appreciation to your favorite open source developers and projects." name="twitter:description" property="og:description">
-  <meta content="https://oss.love" property="og:url">
-  <meta content="https://oss.love" property="twitter:url">
+  <meta content="https://oss.cards" property="og:url">
+  <meta content="https://oss.cards" property="twitter:url">
   <meta content="${ogURL(data.ogPath)}" property="og:image">
   <meta content="${ogURL(data.ogPath)}" name="twitter:image">
   <link rel="stylesheet" href="/styles.css">  
@@ -51,7 +51,7 @@ exports.render = function (data) {
           <polygon points="103.53 21.61 103.52 60.32 70 79.68 70 40.97 103.53 21.61" fill="#ea4f4b" stroke="#1c2126" stroke-linejoin="round" stroke-width="2"/>
           <polygon points="103.53 21.61 103.53 60.32 137.05 79.68 137.05 40.97 103.53 21.61" fill="#ff6b60" stroke="#1c2126" stroke-linejoin="round" stroke-width="2"/>
         </svg>
-        <span>oss.love</span>
+        <span>oss.cards</span>
       </a>
       <div id="header-auth">    
       </div>

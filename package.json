@@ -1,7 +1,7 @@
 {
   "name": "oss-valentines",
   "version": "1.0.0",
-  "description": "The code that powers https://oss.love",
+  "description": "The code that powers https://oss.cards",
   "scripts": {
     "build": "eleventy",
     "dev": "eleventy --serve"
