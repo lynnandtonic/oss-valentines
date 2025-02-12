@@ -13,7 +13,6 @@ This site was built to allow people to express their appreciation of open source
 - [Netlify Functions](https://www.netlify.com/products/functions) and [on-demand builders](https://docs.netlify.com/configure-builds/on-demand-builders/) for creating unique pages on demand
 - [Supabase](https://supabase.com/) via Netlify Functions for data persistence and retrieval
 - [Cloudinary](https://cloudinary.com/) for generating composite open graph images
-- [Netlify Graph](https://www.netlify.com/blog/announcing-netlify-graph-a-faster-way-for-teams-to-develop-web-apps-with-apis) for simplified API querying
 - [GitHub oAuth](https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps) for user authenticaion
 
 
