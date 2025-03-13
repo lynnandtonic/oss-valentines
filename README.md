@@ -3,7 +3,7 @@
 ![oss.cards interface](https://github.com/user-attachments/assets/fa85ec2e-ca8d-4cc0-94bd-40e45341358a)
 
 Originally built by a small team at Netlify.
-Now maintained by [@lynnandtonic](https://github.com/lynnandtonic) and presented by [OpenSauced](https://opensauced.pizza) and [ui.dev](https://ui.dev).
+Now maintained by [@lynnandtonic](https://github.com/lynnandtonic).
 
 ## Overview
 
