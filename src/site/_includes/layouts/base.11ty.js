@@ -79,13 +79,6 @@ exports.render = function (data) {
       <small>Thank you to <a href='https://netlify.com'>Netlify</a>, <a href="https://www.hawksworx.com/">Phil Hawksworth</a>, <a href="https://jason.energy/">Jason Lengstorf</a>, and <a href="https://ryanmulligan.dev/">Ryan Mulligan</a></small>
       <p><small><a href="https://github.com/lynnandtonic/oss-valentines">This project is open source on GitHub</a></small></p>
     </div>
-    <div class="sponsors">
-      <h4>Presented by</h4>
-      <div>
-        <a href="https://opensauced.pizza"><img src="/img/opensauced.svg" class="opensauced" alt="OpenSauced" width="140" height="24"></a>
-        <a href="https://ui.dev/"><img src="/img/uidotdev.svg" class="uidev" alt="ui.dev" width="50" height="50" /></a>
-      </div>
-    </div>
   </footer>
 
   ${data.scripts.map((s) => '<script src="/js/' + s + '"></script>').join('')}
