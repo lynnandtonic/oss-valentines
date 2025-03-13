@@ -1,6 +1,6 @@
 # oss-valentines (https://oss.cards) 
 
-![Open-source-Open-hearts](https://github.com/lynnandtonic/oss-valentines/assets/871315/b2acbd97-c16b-44c7-93d2-df510ae72a22)
+![oss.cards interface](https://github.com/user-attachments/assets/fa85ec2e-ca8d-4cc0-94bd-40e45341358a)
 
 Originally built by a small team at Netlify.
 Now maintained by [@lynnandtonic](https://github.com/lynnandtonic) and presented by [OpenSauced](https://opensauced.pizza) and [ui.dev](https://ui.dev).
@@ -13,7 +13,6 @@ This site was built to allow people to express their appreciation of open source
 - [Netlify Functions](https://www.netlify.com/products/functions) and [on-demand builders](https://docs.netlify.com/configure-builds/on-demand-builders/) for creating unique pages on demand
 - [Supabase](https://supabase.com/) via Netlify Functions for data persistence and retrieval
 - [Cloudinary](https://cloudinary.com/) for generating composite open graph images
-- [Netlify Graph](https://www.netlify.com/blog/announcing-netlify-graph-a-faster-way-for-teams-to-develop-web-apps-with-apis) for simplified API querying
 - [GitHub oAuth](https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps) for user authenticaion
 
 
