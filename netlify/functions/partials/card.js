@@ -39,7 +39,6 @@ module.exports = (data) => {
             <small class="copy-success"></small>
             <button class="copy-url">Copy</button>
           </div>
-          <a class="button tweet-link" href="https://twitter.com/intent/tweet?text=I can’t keep my feelings a secret... I just have to share this card with the world!&url=https://oss.cards/card/${data.path}">Tweet</a>
         </div>
       </section>
       

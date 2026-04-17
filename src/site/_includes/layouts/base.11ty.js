@@ -29,15 +29,10 @@ exports.render = function (data) {
   <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta content="@lynnandtonic" name="twitter:site">
-  <meta content="@lynnandtonic" name="twitter:creator">
-  <meta content="Open source, Open hearts" name="twitter:title" property="og:title">
-  <meta content="Show your love for the OSS community and send a token of appreciation to your favorite open source developers and projects." name="twitter:description" property="og:description">
+  <meta content="Open source, Open hearts" property="og:title">
+  <meta content="Show your love for the OSS community and send a token of appreciation to your favorite open source developers and projects." property="og:description">
   <meta content="https://oss.cards" property="og:url">
-  <meta content="https://oss.cards" property="twitter:url">
   <meta content="${ogURL(data.ogPath)}" property="og:image">
-  <meta content="${ogURL(data.ogPath)}" name="twitter:image">
   <link rel="stylesheet" href="/styles.css">  
 </head>
 
